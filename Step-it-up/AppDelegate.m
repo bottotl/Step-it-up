@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "EaseStartView.h"
+
 
 @interface AppDelegate ()
 
@@ -16,8 +18,32 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+
+    //设置导航条样式
+    [self customizeInterface];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    
+    [self.window makeKeyAndVisible];
+    
+    EaseStartView *startView = [EaseStartView startView];
+    @weakify(self);
+    [startView startAnimationWithCompletionBlock:^(EaseStartView *easeStartView) {
+        @strongify(self);
+        [self completionStartAnimationWithOptions:launchOptions];
+    }];
+    
+
+    
     return YES;
+}
+
+- (void)completionStartAnimationWithOptions:(NSDictionary *)launchOptions{
+    //推送注册
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -123,5 +149,46 @@
         }
     }
 }
+
+#pragma mark - Interface
+- (void)customizeInterface {
+    //设置Nav的背景色和title色
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    NSDictionary *textAttributes = nil;
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+        [navigationBarAppearance setTintColor:[UIColor whiteColor]];//返回按钮的箭头颜色
+        [[UITextField appearance] setTintColor:[UIColor colorWithHexString:@"0x3bbc79"]];//设置UITextField的光标颜色
+        [[UITextView appearance] setTintColor:[UIColor colorWithHexString:@"0x3bbc79"]];//设置UITextView的光标颜色
+        [[UISearchBar appearance] setBackgroundImage:[UIImage imageWithColor:kColorTableSectionBg] forBarPosition:0 barMetrics:UIBarMetricsDefault];
+        
+        textAttributes = @{
+                           NSFontAttributeName: [UIFont boldSystemFontOfSize:kNavTitleFontSize],
+                           NSForegroundColorAttributeName: [UIColor whiteColor],
+                           };
+    } else {
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+        [[UISearchBar appearance] setBackgroundImage:[UIImage imageWithColor:kColorTableSectionBg]];
+        
+        textAttributes = @{
+                           UITextAttributeFont: [UIFont boldSystemFontOfSize:kNavTitleFontSize],
+                           UITextAttributeTextColor: [UIColor whiteColor],
+                           UITextAttributeTextShadowColor: [UIColor clearColor],
+                           UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero],
+                           };
+#endif
+    }
+    [navigationBarAppearance setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithHexString:@"0x28303b"]] forBarMetrics:UIBarMetricsDefault];
+    [navigationBarAppearance setTitleTextAttributes:textAttributes];
+}
+
+#pragma mark - ViewController
+
+- (void)setupTabViewController{
+    //RootTabViewController *rootVC = [[RootTabViewController alloc] init];
+    //rootVC.tabBar.translucent = YES;
+    
+    //[self.window setRootViewController:rootVC];
+}
+
 
 @end
