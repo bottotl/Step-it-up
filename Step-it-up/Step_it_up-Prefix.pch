@@ -22,42 +22,22 @@
 #import "APIUrl.h"
 //
 #import "NSString+Common.h"
-//#import "NSObject+Common.h"
 #import "UIImage+Common.h"
-//#import "UIButton+Bootstrap.h"
 #import "UIColor+expanded.h"
-//#import "UIButton+Common.h"
-//#import "UITableView+Common.h"
 #import "UIView+Common.h"
-//#import "UIImageView+Common.h"
-//#import "UILabel+Common.h"
-//#import "NSDate+Common.h"
-//#import "UIBarButtonItem+Common.h"
-//#import "UIActionSheet+Common.h"
+#import "UIBarButtonItem+Common.h"
 #import "NSURL+Common.h"
-//#import "UISearchBar+Common.h"
-//#import "UITTTAttributedLabel.h"
 #import "NSObject+ObjectMap.h"
-//#import "ImageSizeManager.h"
-//#import "MobClick.h"
-//#import <BlocksKit/BlocksKit+UIKit.h>
-//#import <ReactiveCocoa/ReactiveCocoa.h>
-#import <ReactiveCocoa/RACEXTScope.h>
-//#import "UIImageView+WebCache.h"
-#import <Masonry/Masonry.h>
+#import "UIBadgeView.h"
 
+
+#import <ReactiveCocoa/RACEXTScope.h>
+#import <Masonry/Masonry.h>
+#import <ReactiveCocoa.h>
 //#import "BaseNavigationController.h"
 //#import "BaseViewController.h"
 
 #endif
-//友盟统计
-#define kUmeng_AppKey @""
-#define kUmeng_Event_Request @"Request"
-
-//友盟推送
-#define kUmeng_AppKey_Push @""
-#define kUmeng_DeviceTokenKey @"Umeng_DeviceTokenKey"
-#define kUmeng_MessageAliasTypeCoding @"GLOBAL_KEY"
 
 //信鸽推送
 #define kXGPush_Id 123456

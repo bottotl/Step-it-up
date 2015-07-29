@@ -9,15 +9,40 @@
 #import "AppDelegate.h"
 #import "EaseStartView.h"
 
+#import "RootTabViewController.h"
+#import "IntroductionViewController.h"
+#import "BaseViewController.h"
+
+#import "XGPush.h"
 
 @interface AppDelegate ()
+#warning isLogin为前期测试界面用的，后期需要扩展
+@property (assign,nonatomic)bool isLogin;
 
 @end
 
 @implementation AppDelegate
 
 
+#pragma mark XGPush
+- (void)registerPush{
+    float sysVer = [[[UIDevice currentDevice] systemVersion] floatValue];
+    if(sysVer < 8){
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+    }else{
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= _IPHONE80_
+        UIMutableUserNotificationCategory *categorys = [[UIMutableUserNotificationCategory alloc] init];
+        UIUserNotificationSettings *userSettings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge|UIUserNotificationTypeSound|UIUserNotificationTypeAlert
+                                                                                     categories:[NSSet setWithObject:categorys]];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:userSettings];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+#endif
+    }
+}
+
+#pragma mark - application
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
@@ -25,7 +50,22 @@
 
     //设置导航条样式
     [self customizeInterface];
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+#warning 第一个画面的Status Bar的样式在 General -> Deployment info -> Status Bar Style 中设置
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
+    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    
+    _isLogin = YES;
+    
+    if (_isLogin) {
+        [self setupTabViewController];
+    }else{
+        [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+        [self setupIntroductionViewController];
+    }
+
+    
     
     [self.window makeKeyAndVisible];
     
@@ -37,12 +77,39 @@
     }];
     
 
-    
+    [self registerPush];
     return YES;
 }
 
 - (void)completionStartAnimationWithOptions:(NSDictionary *)launchOptions{
     //推送注册
+//    
+//    if (_isLogin) {
+//        NSDictionary *remoteNotification = [launchOptions valueForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+//        if (remoteNotification) {
+//            [BaseViewController handleNotificationInfo:remoteNotification applicationState:UIApplicationStateInactive];
+//        }
+//    }
+//    
+//    
+//    //    信鸽推送
+//    [XGPush startApp:kXGPush_Id appKey:kXGPush_Key];
+//    [Login setXGAccountWithCurUser];
+//    //注销之后需要再次注册前的准备
+//    @weakify(self);
+//    void (^successCallback)(void) = ^(void){
+//        //如果变成需要注册状态
+//        if(![XGPush isUnRegisterStatus] && [Login isLogin]){
+//            @strongify(self);
+//            [self registerPush];
+//        }
+//    };
+//    [XGPush initForReregister:successCallback];
+//    
+//    [XGPush registerPush];  //注册Push服务，注册后才能收到推送
+//    
+//    推送反馈(app不在前台运行时，点击推送激活时。统计而已)
+//    [XGPush handleLaunching:launchOptions];
     
 }
 
@@ -183,11 +250,17 @@
 
 #pragma mark - ViewController
 
+
+- (void)setupIntroductionViewController{
+    IntroductionViewController *introductionVC = [[IntroductionViewController alloc] init];
+    [self.window setRootViewController:introductionVC];
+}
+
 - (void)setupTabViewController{
-    //RootTabViewController *rootVC = [[RootTabViewController alloc] init];
-    //rootVC.tabBar.translucent = YES;
+    RootTabViewController *rootVC = [[RootTabViewController alloc] init];
+    rootVC.tabBar.translucent = YES;
     
-    //[self.window setRootViewController:rootVC];
+    [self.window setRootViewController:rootVC];
 }
 
 
