@@ -17,6 +17,13 @@
 
 @implementation Todo_RootViewController
 
+-(instancetype)init{
+    if ((self = [super init])) {
+        self = [[UIStoryboard storyboardWithName:@"SIUToDoSB" bundle:nil]instantiateInitialViewController];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

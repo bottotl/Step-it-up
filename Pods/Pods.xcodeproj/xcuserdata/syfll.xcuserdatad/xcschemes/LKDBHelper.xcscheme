@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E2F18355A92748A2D6517AF4"
+               BlueprintIdentifier = "45FAF5236D28D60183ADDA5F"
                BuildableName = "libLKDBHelper.a"
                BlueprintName = "LKDBHelper"
                ReferencedContainer = "container:Pods.xcodeproj">

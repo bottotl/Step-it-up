@@ -29,6 +29,32 @@
 		30211B871B69011800102C32 /* XHPopMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30211B831B69011800102C32 /* XHPopMenuItem.m */; };
 		30211B881B69011800102C32 /* XHPopMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30211B851B69011800102C32 /* XHPopMenuItemView.m */; };
 		30211B8D1B69058D00102C32 /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 30211B8C1B69058D00102C32 /* DWBubbleMenuButton.m */; };
+		302745AD1B6A05A0007E8DAE /* YLGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745AA1B6A05A0007E8DAE /* YLGIFImage.m */; };
+		302745AE1B6A05A0007E8DAE /* YLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745AC1B6A05A0007E8DAE /* YLImageView.m */; };
+		302745B11B6A05E9007E8DAE /* HtmlMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745B01B6A05E9007E8DAE /* HtmlMedia.m */; };
+		302745B61B6A07C0007E8DAE /* NSString+Emojize.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745B51B6A07C0007E8DAE /* NSString+Emojize.m */; };
+		302745B91B6A09B4007E8DAE /* UITableView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745B81B6A09B4007E8DAE /* UITableView+Common.m */; };
+		302745BC1B6A1772007E8DAE /* UserInfoIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745BB1B6A1772007E8DAE /* UserInfoIconCell.m */; };
+		302745BF1B6A1A04007E8DAE /* Discover_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745BE1B6A1A04007E8DAE /* Discover_RootViewController.m */; };
+		302745C51B6A1AD0007E8DAE /* Group_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745C41B6A1AD0007E8DAE /* Group_RootViewController.m */; };
+		302E3CE71B69B0600032395E /* Me_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302E3CE61B69B0600032395E /* Me_RootViewController.m */; };
+		302E3CEB1B69BC970032395E /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302E3CEA1B69BC970032395E /* UserInfoViewController.m */; };
+		302E3CEE1B69BEA80032395E /* EaseUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 302E3CED1B69BEA80032395E /* EaseUserHeaderView.m */; };
+		303BAE9E1B69C0B9007AD195 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAE9D1B69C0B9007AD195 /* Login.m */; };
+		303BAEA11B69C0C4007AD195 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEA01B69C0C4007AD195 /* User.m */; };
+		303BAEA41B69C13D007AD195 /* UITapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEA31B69C13D007AD195 /* UITapImageView.m */; };
+		303BAEA71B69EA47007AD195 /* UIImageView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEA61B69EA47007AD195 /* UIImageView+Common.m */; };
+		303BAEAE1B69FEDF007AD195 /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEAD1B69FEDF007AD195 /* UIButton+Bootstrap.m */; };
+		303BAEC31B6A0062007AD195 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEB11B6A0062007AD195 /* MBProgressHUD+Add.m */; };
+		303BAEC41B6A0062007AD195 /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEB31B6A0062007AD195 /* MJPhoto.m */; };
+		303BAEC51B6A0062007AD195 /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 303BAEB41B6A0062007AD195 /* MJPhotoBrowser.bundle */; };
+		303BAEC61B6A0062007AD195 /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEB61B6A0062007AD195 /* MJPhotoBrowser.m */; };
+		303BAEC71B6A0062007AD195 /* MJPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEB81B6A0062007AD195 /* MJPhotoLoadingView.m */; };
+		303BAEC81B6A0062007AD195 /* MJPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEBA1B6A0062007AD195 /* MJPhotoProgressView.m */; };
+		303BAEC91B6A0062007AD195 /* MJPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEBC1B6A0062007AD195 /* MJPhotoToolbar.m */; };
+		303BAECA1B6A0062007AD195 /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEBE1B6A0062007AD195 /* MJPhotoView.m */; };
+		303BAECB1B6A0062007AD195 /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEC01B6A0062007AD195 /* SDWebImageManager+MJ.m */; };
+		303BAECC1B6A0062007AD195 /* UIImageView+MJWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEC21B6A0062007AD195 /* UIImageView+MJWebCache.m */; };
 		304EB1C61B6874740049BA37 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1C51B6874740049BA37 /* IntroductionViewController.m */; };
 		304EB1C91B687B2D0049BA37 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1C81B687B2D0049BA37 /* BaseViewController.m */; };
 		304EB1CC1B687B600049BA37 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1CB1B687B600049BA37 /* RegisterViewController.m */; };
@@ -435,6 +461,58 @@
 		30211B891B69042F00102C32 /* SIUMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIUMacros.h; sourceTree = "<group>"; };
 		30211B8B1B69058D00102C32 /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBubbleMenuButton.h; sourceTree = "<group>"; };
 		30211B8C1B69058D00102C32 /* DWBubbleMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWBubbleMenuButton.m; sourceTree = "<group>"; };
+		302745A91B6A05A0007E8DAE /* YLGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGIFImage.h; sourceTree = "<group>"; };
+		302745AA1B6A05A0007E8DAE /* YLGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGIFImage.m; sourceTree = "<group>"; };
+		302745AB1B6A05A0007E8DAE /* YLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImageView.h; sourceTree = "<group>"; };
+		302745AC1B6A05A0007E8DAE /* YLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageView.m; sourceTree = "<group>"; };
+		302745AF1B6A05E9007E8DAE /* HtmlMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlMedia.h; sourceTree = "<group>"; };
+		302745B01B6A05E9007E8DAE /* HtmlMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlMedia.m; sourceTree = "<group>"; };
+		302745B31B6A07C0007E8DAE /* emojis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emojis.h; sourceTree = "<group>"; };
+		302745B41B6A07C0007E8DAE /* NSString+Emojize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emojize.h"; sourceTree = "<group>"; };
+		302745B51B6A07C0007E8DAE /* NSString+Emojize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emojize.m"; sourceTree = "<group>"; };
+		302745B71B6A09B4007E8DAE /* UITableView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Common.h"; sourceTree = "<group>"; };
+		302745B81B6A09B4007E8DAE /* UITableView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Common.m"; sourceTree = "<group>"; };
+		302745BA1B6A1772007E8DAE /* UserInfoIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoIconCell.h; sourceTree = "<group>"; };
+		302745BB1B6A1772007E8DAE /* UserInfoIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoIconCell.m; sourceTree = "<group>"; };
+		302745BD1B6A1A04007E8DAE /* Discover_RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Discover_RootViewController.h; sourceTree = "<group>"; };
+		302745BE1B6A1A04007E8DAE /* Discover_RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Discover_RootViewController.m; sourceTree = "<group>"; };
+		302745C31B6A1AD0007E8DAE /* Group_RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group_RootViewController.h; sourceTree = "<group>"; };
+		302745C41B6A1AD0007E8DAE /* Group_RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group_RootViewController.m; sourceTree = "<group>"; };
+		302E3CE51B69B0600032395E /* Me_RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Me_RootViewController.h; sourceTree = "<group>"; };
+		302E3CE61B69B0600032395E /* Me_RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Me_RootViewController.m; sourceTree = "<group>"; };
+		302E3CE91B69BC970032395E /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		302E3CEA1B69BC970032395E /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		302E3CEC1B69BEA80032395E /* EaseUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseUserHeaderView.h; sourceTree = "<group>"; };
+		302E3CED1B69BEA80032395E /* EaseUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseUserHeaderView.m; sourceTree = "<group>"; };
+		303BAE9C1B69C0B9007AD195 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		303BAE9D1B69C0B9007AD195 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		303BAE9F1B69C0C4007AD195 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		303BAEA01B69C0C4007AD195 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		303BAEA21B69C13D007AD195 /* UITapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITapImageView.h; sourceTree = "<group>"; };
+		303BAEA31B69C13D007AD195 /* UITapImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITapImageView.m; sourceTree = "<group>"; };
+		303BAEA51B69EA47007AD195 /* UIImageView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Common.h"; sourceTree = "<group>"; };
+		303BAEA61B69EA47007AD195 /* UIImageView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Common.m"; sourceTree = "<group>"; };
+		303BAEAC1B69FEDF007AD195 /* UIButton+Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Bootstrap.h"; sourceTree = "<group>"; };
+		303BAEAD1B69FEDF007AD195 /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Bootstrap.m"; sourceTree = "<group>"; };
+		303BAEB01B6A0062007AD195 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		303BAEB11B6A0062007AD195 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		303BAEB21B6A0062007AD195 /* MJPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhoto.h; sourceTree = "<group>"; };
+		303BAEB31B6A0062007AD195 /* MJPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhoto.m; sourceTree = "<group>"; };
+		303BAEB41B6A0062007AD195 /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
+		303BAEB51B6A0062007AD195 /* MJPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoBrowser.h; sourceTree = "<group>"; };
+		303BAEB61B6A0062007AD195 /* MJPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoBrowser.m; sourceTree = "<group>"; };
+		303BAEB71B6A0062007AD195 /* MJPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoLoadingView.h; sourceTree = "<group>"; };
+		303BAEB81B6A0062007AD195 /* MJPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoLoadingView.m; sourceTree = "<group>"; };
+		303BAEB91B6A0062007AD195 /* MJPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoProgressView.h; sourceTree = "<group>"; };
+		303BAEBA1B6A0062007AD195 /* MJPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoProgressView.m; sourceTree = "<group>"; };
+		303BAEBB1B6A0062007AD195 /* MJPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoToolbar.h; sourceTree = "<group>"; };
+		303BAEBC1B6A0062007AD195 /* MJPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoToolbar.m; sourceTree = "<group>"; };
+		303BAEBD1B6A0062007AD195 /* MJPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoView.h; sourceTree = "<group>"; };
+		303BAEBE1B6A0062007AD195 /* MJPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoView.m; sourceTree = "<group>"; };
+		303BAEBF1B6A0062007AD195 /* SDWebImageManager+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageManager+MJ.h"; sourceTree = "<group>"; };
+		303BAEC01B6A0062007AD195 /* SDWebImageManager+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageManager+MJ.m"; sourceTree = "<group>"; };
+		303BAEC11B6A0062007AD195 /* UIImageView+MJWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MJWebCache.h"; sourceTree = "<group>"; };
+		303BAEC21B6A0062007AD195 /* UIImageView+MJWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MJWebCache.m"; sourceTree = "<group>"; };
 		304EB1C41B6874740049BA37 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
 		304EB1C51B6874740049BA37 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
 		304EB1C71B687B2D0049BA37 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -854,6 +932,12 @@
 		301653761B670AA900D94163 /* OC_Category */ = {
 			isa = PBXGroup;
 			children = (
+				302745B71B6A09B4007E8DAE /* UITableView+Common.h */,
+				302745B81B6A09B4007E8DAE /* UITableView+Common.m */,
+				303BAEAC1B69FEDF007AD195 /* UIButton+Bootstrap.h */,
+				303BAEAD1B69FEDF007AD195 /* UIButton+Bootstrap.m */,
+				303BAEA51B69EA47007AD195 /* UIImageView+Common.h */,
+				303BAEA61B69EA47007AD195 /* UIImageView+Common.m */,
 				30C6AFC31B67613500A0046C /* NSObject+ObjectMap.h */,
 				30C6AFC41B67613500A0046C /* NSObject+ObjectMap.m */,
 				30C6AFBA1B67541A00A0046C /* NSURL+Common.h */,
@@ -909,6 +993,7 @@
 				301B690E1B6674030011CE91 /* Info.plist */,
 				30211B671B68FFE500102C32 /* StoryBoard */,
 				30C6AD141B672DFA00A0046C /* Images */,
+				303BAE9B1B69C08D007AD195 /* Models */,
 				3053430B1B6680E000F963A1 /* Views */,
 				304EB1B81B686CBB0049BA37 /* ViewControllers */,
 				305341811B667EBC00F963A1 /* Vendor */,
@@ -1002,9 +1087,88 @@
 			path = DWBubbleMenuButton;
 			sourceTree = "<group>";
 		};
+		302745A81B6A05A0007E8DAE /* YLGIFImage */ = {
+			isa = PBXGroup;
+			children = (
+				302745A91B6A05A0007E8DAE /* YLGIFImage.h */,
+				302745AA1B6A05A0007E8DAE /* YLGIFImage.m */,
+				302745AB1B6A05A0007E8DAE /* YLImageView.h */,
+				302745AC1B6A05A0007E8DAE /* YLImageView.m */,
+			);
+			path = YLGIFImage;
+			sourceTree = "<group>";
+		};
+		302745B21B6A07C0007E8DAE /* NSStringEmojize */ = {
+			isa = PBXGroup;
+			children = (
+				302745B31B6A07C0007E8DAE /* emojis.h */,
+				302745B41B6A07C0007E8DAE /* NSString+Emojize.h */,
+				302745B51B6A07C0007E8DAE /* NSString+Emojize.m */,
+			);
+			path = NSStringEmojize;
+			sourceTree = "<group>";
+		};
+		302E3CE81B69BC770032395E /* Reuse */ = {
+			isa = PBXGroup;
+			children = (
+				302E3CE91B69BC970032395E /* UserInfoViewController.h */,
+				302E3CEA1B69BC970032395E /* UserInfoViewController.m */,
+			);
+			path = Reuse;
+			sourceTree = "<group>";
+		};
+		303BAE9B1B69C08D007AD195 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				302745AF1B6A05E9007E8DAE /* HtmlMedia.h */,
+				302745B01B6A05E9007E8DAE /* HtmlMedia.m */,
+				303BAE9C1B69C0B9007AD195 /* Login.h */,
+				303BAE9D1B69C0B9007AD195 /* Login.m */,
+				303BAE9F1B69C0C4007AD195 /* User.h */,
+				303BAEA01B69C0C4007AD195 /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		303BAEA81B69F689007AD195 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				302745BA1B6A1772007E8DAE /* UserInfoIconCell.h */,
+				302745BB1B6A1772007E8DAE /* UserInfoIconCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		303BAEAF1B6A0062007AD195 /* MJPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				303BAEB01B6A0062007AD195 /* MBProgressHUD+Add.h */,
+				303BAEB11B6A0062007AD195 /* MBProgressHUD+Add.m */,
+				303BAEB21B6A0062007AD195 /* MJPhoto.h */,
+				303BAEB31B6A0062007AD195 /* MJPhoto.m */,
+				303BAEB41B6A0062007AD195 /* MJPhotoBrowser.bundle */,
+				303BAEB51B6A0062007AD195 /* MJPhotoBrowser.h */,
+				303BAEB61B6A0062007AD195 /* MJPhotoBrowser.m */,
+				303BAEB71B6A0062007AD195 /* MJPhotoLoadingView.h */,
+				303BAEB81B6A0062007AD195 /* MJPhotoLoadingView.m */,
+				303BAEB91B6A0062007AD195 /* MJPhotoProgressView.h */,
+				303BAEBA1B6A0062007AD195 /* MJPhotoProgressView.m */,
+				303BAEBB1B6A0062007AD195 /* MJPhotoToolbar.h */,
+				303BAEBC1B6A0062007AD195 /* MJPhotoToolbar.m */,
+				303BAEBD1B6A0062007AD195 /* MJPhotoView.h */,
+				303BAEBE1B6A0062007AD195 /* MJPhotoView.m */,
+				303BAEBF1B6A0062007AD195 /* SDWebImageManager+MJ.h */,
+				303BAEC01B6A0062007AD195 /* SDWebImageManager+MJ.m */,
+				303BAEC11B6A0062007AD195 /* UIImageView+MJWebCache.h */,
+				303BAEC21B6A0062007AD195 /* UIImageView+MJWebCache.m */,
+			);
+			path = MJPhotoBrowser;
+			sourceTree = "<group>";
+		};
 		304EB1B81B686CBB0049BA37 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				302E3CE81B69BC770032395E /* Reuse */,
 				30211B621B68F06500102C32 /* Todo */,
 				304EB1C31B6874450049BA37 /* Login */,
 				304EB1B91B686CBB0049BA37 /* RootControllers */,
@@ -1023,6 +1187,12 @@
 				304EB1D41B6881420049BA37 /* RootTabViewController.m */,
 				304EB1FC1B68A9B30049BA37 /* Todo_RootViewController.h */,
 				304EB1FD1B68A9B30049BA37 /* Todo_RootViewController.m */,
+				302E3CE51B69B0600032395E /* Me_RootViewController.h */,
+				302E3CE61B69B0600032395E /* Me_RootViewController.m */,
+				302745BD1B6A1A04007E8DAE /* Discover_RootViewController.h */,
+				302745BE1B6A1A04007E8DAE /* Discover_RootViewController.m */,
+				302745C31B6A1AD0007E8DAE /* Group_RootViewController.h */,
+				302745C41B6A1AD0007E8DAE /* Group_RootViewController.m */,
 			);
 			path = RootControllers;
 			sourceTree = "<group>";
@@ -1075,6 +1245,8 @@
 			children = (
 				304EB2001B68AC470049BA37 /* UIBadgeView.h */,
 				304EB2011B68AC470049BA37 /* UIBadgeView.m */,
+				303BAEA21B69C13D007AD195 /* UITapImageView.h */,
+				303BAEA31B69C13D007AD195 /* UITapImageView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1082,6 +1254,9 @@
 		305341811B667EBC00F963A1 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				302745B21B6A07C0007E8DAE /* NSStringEmojize */,
+				302745A81B6A05A0007E8DAE /* YLGIFImage */,
+				303BAEAF1B6A0062007AD195 /* MJPhotoBrowser */,
 				30211B8A1B69058D00102C32 /* DWBubbleMenuButton */,
 				30211B7F1B69011800102C32 /* PopMenu */,
 				304EB1D91B68A83D0049BA37 /* JTCalender */,
@@ -1092,6 +1267,9 @@
 		3053430B1B6680E000F963A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				303BAEA81B69F689007AD195 /* Cell */,
+				302E3CEC1B69BEA80032395E /* EaseUserHeaderView.h */,
+				302E3CED1B69BEA80032395E /* EaseUserHeaderView.m */,
 				30C6AD111B672ABA00A0046C /* EaseStartView.h */,
 				30C6AD121B672ABA00A0046C /* EaseStartView.m */,
 			);
@@ -1810,6 +1988,7 @@
 				30C6AE961B672DFB00A0046C /* coding_emoji_10@2x.png in Resources */,
 				30C6AEB41B672DFB00A0046C /* coding_emoji_41@2x.png in Resources */,
 				30C6AF221B672DFB00A0046C /* mrpr_icon_fileChange@2x.png in Resources */,
+				303BAEC51B6A0062007AD195 /* MJPhotoBrowser.bundle in Resources */,
 				30C6AE8B1B672DFB00A0046C /* creator_image@2x.png in Resources */,
 				30C6AF911B672DFB00A0046C /* tipIcon_TaskComment@2x.png in Resources */,
 				30C6AFA41B672DFB00A0046C /* xtsegment_bordor_left@2x.png in Resources */,
@@ -2135,39 +2314,64 @@
 				304EB1F91B68A83D0049BA37 /* JTCalendarMonthWeekDaysView.m in Sources */,
 				304EB1C91B687B2D0049BA37 /* BaseViewController.m in Sources */,
 				30211B871B69011800102C32 /* XHPopMenuItem.m in Sources */,
+				303BAEC91B6A0062007AD195 /* MJPhotoToolbar.m in Sources */,
 				304EB1F81B68A83D0049BA37 /* JTCalendarMonthView.m in Sources */,
 				30211B781B69003000102C32 /* CalenderStyleViewController.m in Sources */,
+				302745B61B6A07C0007E8DAE /* NSString+Emojize.m in Sources */,
+				303BAECA1B6A0062007AD195 /* MJPhotoView.m in Sources */,
 				30211B7E1B69003000102C32 /* ToDoTypeStyleViewController.m in Sources */,
 				301B68FF1B6674030011CE91 /* AppDelegate.m in Sources */,
 				304EB1F21B68A83D0049BA37 /* JTCalendarAppearance.m in Sources */,
+				303BAEA11B69C0C4007AD195 /* User.m in Sources */,
+				302745C51B6A1AD0007E8DAE /* Group_RootViewController.m in Sources */,
 				30C6AD131B672ABA00A0046C /* EaseStartView.m in Sources */,
 				3016537D1B67205100D94163 /* UIImage+Common.m in Sources */,
+				302745BF1B6A1A04007E8DAE /* Discover_RootViewController.m in Sources */,
 				30211B7B1B69003000102C32 /* ToDoAllStyleViewController.m in Sources */,
 				304EB1F71B68A83D0049BA37 /* JTCalendarMenuView.m in Sources */,
+				303BAECC1B6A0062007AD195 /* UIImageView+MJWebCache.m in Sources */,
 				30C6AFB61B67441C00A0046C /* NSString+Common.m in Sources */,
+				302E3CEB1B69BC970032395E /* UserInfoViewController.m in Sources */,
 				30211B861B69011800102C32 /* XHPopMenu.m in Sources */,
 				30211B7C1B69003000102C32 /* ToDoCalenderStyleViewController.m in Sources */,
+				303BAEAE1B69FEDF007AD195 /* UIButton+Bootstrap.m in Sources */,
 				304EB1FE1B68A9B30049BA37 /* Todo_RootViewController.m in Sources */,
 				304EB1FB1B68A83D0049BA37 /* JTCircleView.m in Sources */,
+				303BAEC41B6A0062007AD195 /* MJPhoto.m in Sources */,
 				30211B7D1B69003000102C32 /* ToDoTabBarController.m in Sources */,
 				304EB1C61B6874740049BA37 /* IntroductionViewController.m in Sources */,
 				30211B8D1B69058D00102C32 /* DWBubbleMenuButton.m in Sources */,
 				304EB1F41B68A83D0049BA37 /* JTCalendarDataCache.m in Sources */,
+				302745BC1B6A1772007E8DAE /* UserInfoIconCell.m in Sources */,
 				30C6AFBC1B67541A00A0046C /* NSURL+Common.m in Sources */,
 				304EB1CF1B687B880049BA37 /* BaseNavigationController.m in Sources */,
+				302745B91B6A09B4007E8DAE /* UITableView+Common.m in Sources */,
+				302E3CEE1B69BEA80032395E /* EaseUserHeaderView.m in Sources */,
+				303BAEA41B69C13D007AD195 /* UITapImageView.m in Sources */,
+				303BAEA71B69EA47007AD195 /* UIImageView+Common.m in Sources */,
 				30C6AFC81B676AF100A0046C /* UIView+Common.m in Sources */,
+				303BAE9E1B69C0B9007AD195 /* Login.m in Sources */,
+				302E3CE71B69B0600032395E /* Me_RootViewController.m in Sources */,
+				302745B11B6A05E9007E8DAE /* HtmlMedia.m in Sources */,
 				304EB1CC1B687B600049BA37 /* RegisterViewController.m in Sources */,
 				304EB1F61B68A83D0049BA37 /* JTCalendarMenuMonthView.m in Sources */,
 				301B68FC1B6674030011CE91 /* main.m in Sources */,
+				303BAEC31B6A0062007AD195 /* MBProgressHUD+Add.m in Sources */,
 				304EB1D81B6899E20049BA37 /* UIBarButtonItem+Common.m in Sources */,
+				303BAEC71B6A0062007AD195 /* MJPhotoLoadingView.m in Sources */,
 				304EB1D51B6881420049BA37 /* RootTabViewController.m in Sources */,
 				30211B7A1B69003000102C32 /* SIUCreateScheduleViewController.m in Sources */,
+				302745AD1B6A05A0007E8DAE /* YLGIFImage.m in Sources */,
 				3016537A1B670B0C00D94163 /* UIColor+expanded.m in Sources */,
 				304EB1F31B68A83D0049BA37 /* JTCalendarContentView.m in Sources */,
 				304EB2021B68AC470049BA37 /* UIBadgeView.m in Sources */,
 				30211B881B69011800102C32 /* XHPopMenuItemView.m in Sources */,
+				302745AE1B6A05A0007E8DAE /* YLImageView.m in Sources */,
+				303BAECB1B6A0062007AD195 /* SDWebImageManager+MJ.m in Sources */,
 				301B69081B6674030011CE91 /* Step_it_up.xcdatamodeld in Sources */,
+				303BAEC61B6A0062007AD195 /* MJPhotoBrowser.m in Sources */,
 				304EB1D21B687BC30049BA37 /* LoginViewController.m in Sources */,
+				303BAEC81B6A0062007AD195 /* MJPhotoProgressView.m in Sources */,
 				304EB1F11B68A83D0049BA37 /* JTCalendar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

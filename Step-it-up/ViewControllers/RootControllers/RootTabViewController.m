@@ -9,7 +9,9 @@
 #import "RootTabViewController.h"
 #import "Todo_RootViewController.h"
 #import "BaseNavigationController.h"
-
+#import "Me_RootViewController.h"
+#import "Discover_RootViewController.h"
+#import "Group_RootViewController.h"
 
 #import "RDVTabBarItem.h"
 
@@ -36,20 +38,20 @@
     Todo_RootViewController *todo = [[Todo_RootViewController alloc]init];
      UINavigationController *nav_project = [[BaseNavigationController alloc] initWithRootViewController:todo];
     
-    Todo_RootViewController *faxian = [[Todo_RootViewController alloc]init];
-    UINavigationController *nav_faxian = [[BaseNavigationController alloc] initWithRootViewController:faxian];
+    Discover_RootViewController *discover = [[Discover_RootViewController alloc]init];
+    UINavigationController *nav_discover = [[BaseNavigationController alloc] initWithRootViewController:discover];
     
-    Todo_RootViewController *qunzu = [[Todo_RootViewController alloc]init];
-    UINavigationController *nav_qunzu = [[BaseNavigationController alloc] initWithRootViewController:qunzu];
+    Group_RootViewController *group = [[Group_RootViewController alloc]init];
+    UINavigationController *nav_group = [[BaseNavigationController alloc] initWithRootViewController:group];
     
-    Todo_RootViewController *zhanghao = [[Todo_RootViewController alloc]init];
-    UINavigationController *nav_zhanghao = [[BaseNavigationController alloc] initWithRootViewController:zhanghao];
+    Me_RootViewController *me = [[Me_RootViewController alloc]init];
+    UINavigationController *nav_me = [[BaseNavigationController alloc] initWithRootViewController:me];
     
-    UITableViewController *calenderStyle = [[UIStoryboard storyboardWithName:@"SIUToDoSB" bundle:nil]instantiateInitialViewController];
+    
     
     
     //Set TabBar's ViewControllers
-    [self setViewControllers:@[calenderStyle,nav_faxian,nav_qunzu,nav_zhanghao]];
+    [self setViewControllers:@[nav_project,nav_group,nav_discover,nav_me]];
     
     
     //Call customize TabBar

@@ -13,9 +13,10 @@ pod 'APParallaxHeader'
 pod 'iVersion', '~> 1.11.4'
 pod 'SSKeychain', '~> 1.2.3'
 pod 'ZXingObjC', '~> 3.1.0'
-
+pod 'BlocksKit', '~> 2.2.5'
 pod 'LKAlarmManager', :head
-
+#刷新头
+pod 'ODRefreshControl', '~> 1.2'
 #布局
 pod 'Masonry', '0.5.3'
 #UiView
@@ -24,6 +25,7 @@ pod 'TTTAttributedLabel', '1.13.4'
 pod 'NYXImagesKit', '2.3'
 pod 'UIImage+BlurredFrame', '0.0.4'
 pod 'SDCAlertView', '~> 2.4.1'
+pod 'SDWebImage', '~> 3.7.3'
 pod 'MarqueeLabel'
 pod 'POP+MCAnimate', '2.0.1'
 pod 'PPiAwesomeButton'

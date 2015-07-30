@@ -74,13 +74,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Step-it-up/ViewControllers/RootControllers/RootTabViewController.m"
-            timestampString = "459868611.991436"
+            timestampString = "459938584.943501"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-setupViewControllers"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Step-it-up/ViewControllers/Reuse/UserInfoViewController.m"
+            timestampString = "459936906.300394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "-setupViewControllers"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UserInfoViewController viewDidLoad]"
+                  moduleName = "Step-it-up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/syfll/Documents/Step-it-up/Step-it-up/ViewControllers/Reuse/UserInfoViewController.m"
+                  timestampString = "459936906.602575"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1256">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[UserInfoViewController viewDidLoad]_block_invoke60"
+                  moduleName = "Step-it-up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/syfll/Documents/Step-it-up/Step-it-up/ViewControllers/Reuse/UserInfoViewController.m"
+                  timestampString = "459936906.604181"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

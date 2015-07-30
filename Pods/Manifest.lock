@@ -55,6 +55,7 @@ PODS:
   - MBProgressHUD (0.9)
   - MMMarkdown (0.3)
   - NYXImagesKit (2.3)
+  - ODRefreshControl (1.2)
   - pop (1.0.7)
   - POP+MCAnimate (2.0.1):
     - pop (~> 1.0)
@@ -94,6 +95,9 @@ PODS:
     - RBBAnimation (~> 0.3)
     - SDCAutoLayout (~> 2.0)
   - SDCAutoLayout (2.0.3)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
   - SMPageControl (1.2)
   - SSKeychain (1.2.3)
   - TPKeyboardAvoiding (1.2.4)
@@ -108,6 +112,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - APParallaxHeader
   - BlocksKit (= 2.2.5)
+  - BlocksKit (~> 2.2.5)
   - hpple (= 0.2.0)
   - iVersion (~> 1.11.4)
   - JazzHands (~> 2.0.0)
@@ -118,12 +123,14 @@ DEPENDENCIES:
   - MBProgressHUD (= 0.9)
   - MMMarkdown (= 0.3)
   - NYXImagesKit (= 2.3)
+  - ODRefreshControl (~> 1.2)
   - POP+MCAnimate (= 2.0.1)
   - PPiAwesomeButton
   - RDVTabBarController (~> 1.1.9)
   - ReactiveCocoa (= 2.3.1)
   - RegexKitLite-NoWarning (~> 1.1.0)
   - SDCAlertView (~> 2.4.1)
+  - SDWebImage (~> 3.7.3)
   - SMPageControl (~> 1.2)
   - SSKeychain (~> 1.2.3)
   - TPKeyboardAvoiding (= 1.2.4)
@@ -149,6 +156,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: d8e7ea388dc1549a42e0d219067cf5f2c898fb66
   MMMarkdown: 13af1af50e5f476f1097797f43ea2bd76c83067a
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
+  ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   POP+MCAnimate: a99e209148c602512de487f1160a44bf78572024
   PPiAwesomeButton: 16f7279582fd36f65186b24b83ef876217363eb5
@@ -158,6 +166,7 @@ SPEC CHECKSUMS:
   RegexKitLite-NoWarning: 365d208f8187997e33d9de8baeddfc00728596d8
   SDCAlertView: 486468bfba6a8cf1190b0f98552a19ae71b4c059
   SDCAutoLayout: e6885bb39ab8e2ec2ff84d158f38035f025f7420
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SMPageControl: 922892813001cfaf059e86e6801f46a967e9ee29
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
   TPKeyboardAvoiding: 0a40dfbb0af7c8bdae1dd457496dccfd217d85f6

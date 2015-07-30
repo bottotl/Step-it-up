@@ -24,6 +24,9 @@
     
     self.view.backgroundColor = kColorTableBG;
 }
+- (void)tabBarItemClicked{
+    DebugLog(@"\ntabBarItemClicked : %@", NSStringFromClass([self class]));
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
