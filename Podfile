@@ -1,6 +1,7 @@
 
 platform :ios, '7.0'
 #Framework
+pod 'SVPullToRefresh', '~> 0.4.1'
 pod 'JDStatusBarNotification', '~> 1.5.2'
 pod 'AFNetworking', '~> 2.5.4'
 pod 'RegexKitLite-NoWarning', '~> 1.1.0'

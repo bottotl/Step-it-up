@@ -7,6 +7,7 @@
 //
 
 #import "UIView+Common.h"
+#define kTagBadgeView  1000
 
 @implementation UIView (Common)
 
@@ -25,6 +26,52 @@
     layer.startPoint = startPoint;
     layer.endPoint = endPoint;
     [self.layer addSublayer:layer];
+}
+#pragma BadgeTip
+- (void)addBadgeTip:(NSString *)badgeValue withCenterPosition:(CGPoint)center{
+    if (!badgeValue || !badgeValue.length) {
+        [self removeBadgeTips];
+    }else{
+        UIView *badgeV = [self viewWithTag:kTagBadgeView];
+        if (badgeV && [badgeV isKindOfClass:[UIBadgeView class]]) {
+            [(UIBadgeView *)badgeV setBadgeValue:badgeValue];
+            badgeV.hidden = NO;
+        }else{
+            badgeV = [UIBadgeView viewWithBadgeTip:badgeValue];
+            badgeV.tag = kTagBadgeView;
+            [self addSubview:badgeV];
+        }
+        [badgeV setCenter:center];
+    }
+}
+- (void)addBadgeTip:(NSString *)badgeValue{
+    if (!badgeValue || !badgeValue.length) {
+        [self removeBadgeTips];
+    }else{
+        UIView *badgeV = [self viewWithTag:kTagBadgeView];
+        if (badgeV && [badgeV isKindOfClass:[UIBadgeView class]]) {
+            [(UIBadgeView *)badgeV setBadgeValue:badgeValue];
+        }else{
+            badgeV = [UIBadgeView viewWithBadgeTip:badgeValue];
+            badgeV.tag = kTagBadgeView;
+            [self addSubview:badgeV];
+        }
+        CGSize badgeSize = badgeV.frame.size;
+        CGSize selfSize = self.frame.size;
+        CGFloat offset = 2.0;
+        [badgeV setCenter:CGPointMake(selfSize.width- (offset+badgeSize.width/2),
+                                      (offset +badgeSize.height/2))];
+    }
+}
+- (void)removeBadgeTips{
+    NSArray *subViews =[self subviews];
+    if (subViews && [subViews count] > 0) {
+        for (UIView *aView in subViews) {
+            if (aView.tag == kTagBadgeView && [aView isKindOfClass:[UIBadgeView class]]) {
+                aView.hidden = YES;
+            }
+        }
+    }
 }
 
 #pragma mark - size & origin

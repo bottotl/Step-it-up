@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19923DEAF5FE119B560C80E6"
+               BlueprintIdentifier = "BEEB7DFDED3B23DE48A1FE93"
                BuildableName = "libSDCAlertView.a"
                BlueprintName = "SDCAlertView"
                ReferencedContainer = "container:Pods.xcodeproj">

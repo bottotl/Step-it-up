@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13D65402111E65EAFBDF9DD6"
+               BlueprintIdentifier = "806BE1BEC53A6658A59F840C"
                BuildableName = "libLKAlarmManager.a"
                BlueprintName = "LKAlarmManager"
                ReferencedContainer = "container:Pods.xcodeproj">

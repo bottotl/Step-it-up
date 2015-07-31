@@ -100,6 +100,7 @@ PODS:
   - SDWebImage/Core (3.7.3)
   - SMPageControl (1.2)
   - SSKeychain (1.2.3)
+  - SVPullToRefresh (0.4.1)
   - TPKeyboardAvoiding (1.2.4)
   - TTTAttributedLabel (1.13.4)
   - UIImage+BlurredFrame (0.0.4)
@@ -133,6 +134,7 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7.3)
   - SMPageControl (~> 1.2)
   - SSKeychain (~> 1.2.3)
+  - SVPullToRefresh (~> 0.4.1)
   - TPKeyboardAvoiding (= 1.2.4)
   - TTTAttributedLabel (= 1.13.4)
   - UIImage+BlurredFrame (= 0.0.4)
@@ -169,6 +171,7 @@ SPEC CHECKSUMS:
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SMPageControl: 922892813001cfaf059e86e6801f46a967e9ee29
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   TPKeyboardAvoiding: 0a40dfbb0af7c8bdae1dd457496dccfd217d85f6
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   UIImage+BlurredFrame: ad2f7195c6947ea3117c7d202f75a51958d5061a

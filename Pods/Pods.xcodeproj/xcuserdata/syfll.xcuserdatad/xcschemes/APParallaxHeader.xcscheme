@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B08C8DDBBA6AB7D3640EC73"
+               BlueprintIdentifier = "09049DFB8BECFBEDEFE8567C"
                BuildableName = "libAPParallaxHeader.a"
                BlueprintName = "APParallaxHeader"
                ReferencedContainer = "container:Pods.xcodeproj">

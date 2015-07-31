@@ -55,6 +55,9 @@
 		303BAECA1B6A0062007AD195 /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEBE1B6A0062007AD195 /* MJPhotoView.m */; };
 		303BAECB1B6A0062007AD195 /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEC01B6A0062007AD195 /* SDWebImageManager+MJ.m */; };
 		303BAECC1B6A0062007AD195 /* UIImageView+MJWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BAEC21B6A0062007AD195 /* UIImageView+MJWebCache.m */; };
+		303D68BD1B6B1816007BC184 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D68BC1B6B1816007BC184 /* BaseCell.m */; };
+		303D68C01B6B1B66007BC184 /* DiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D68BF1B6B1B66007BC184 /* DiscoverCell.m */; };
+		303D68C41B6B5795007BC184 /* MeGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D68C31B6B5795007BC184 /* MeGroupCell.m */; };
 		304EB1C61B6874740049BA37 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1C51B6874740049BA37 /* IntroductionViewController.m */; };
 		304EB1C91B687B2D0049BA37 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1C81B687B2D0049BA37 /* BaseViewController.m */; };
 		304EB1CC1B687B600049BA37 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1CB1B687B600049BA37 /* RegisterViewController.m */; };
@@ -513,6 +516,12 @@
 		303BAEC01B6A0062007AD195 /* SDWebImageManager+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageManager+MJ.m"; sourceTree = "<group>"; };
 		303BAEC11B6A0062007AD195 /* UIImageView+MJWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MJWebCache.h"; sourceTree = "<group>"; };
 		303BAEC21B6A0062007AD195 /* UIImageView+MJWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MJWebCache.m"; sourceTree = "<group>"; };
+		303D68BB1B6B1816007BC184 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		303D68BC1B6B1816007BC184 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		303D68BE1B6B1B66007BC184 /* DiscoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverCell.h; sourceTree = "<group>"; };
+		303D68BF1B6B1B66007BC184 /* DiscoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverCell.m; sourceTree = "<group>"; };
+		303D68C21B6B5795007BC184 /* MeGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeGroupCell.h; sourceTree = "<group>"; };
+		303D68C31B6B5795007BC184 /* MeGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeGroupCell.m; sourceTree = "<group>"; };
 		304EB1C41B6874740049BA37 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
 		304EB1C51B6874740049BA37 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
 		304EB1C71B687B2D0049BA37 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -1135,6 +1144,12 @@
 			children = (
 				302745BA1B6A1772007E8DAE /* UserInfoIconCell.h */,
 				302745BB1B6A1772007E8DAE /* UserInfoIconCell.m */,
+				303D68BB1B6B1816007BC184 /* BaseCell.h */,
+				303D68BC1B6B1816007BC184 /* BaseCell.m */,
+				303D68BE1B6B1B66007BC184 /* DiscoverCell.h */,
+				303D68BF1B6B1B66007BC184 /* DiscoverCell.m */,
+				303D68C21B6B5795007BC184 /* MeGroupCell.h */,
+				303D68C31B6B5795007BC184 /* MeGroupCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -2323,6 +2338,7 @@
 				301B68FF1B6674030011CE91 /* AppDelegate.m in Sources */,
 				304EB1F21B68A83D0049BA37 /* JTCalendarAppearance.m in Sources */,
 				303BAEA11B69C0C4007AD195 /* User.m in Sources */,
+				303D68C01B6B1B66007BC184 /* DiscoverCell.m in Sources */,
 				302745C51B6A1AD0007E8DAE /* Group_RootViewController.m in Sources */,
 				30C6AD131B672ABA00A0046C /* EaseStartView.m in Sources */,
 				3016537D1B67205100D94163 /* UIImage+Common.m in Sources */,
@@ -2338,6 +2354,7 @@
 				304EB1FE1B68A9B30049BA37 /* Todo_RootViewController.m in Sources */,
 				304EB1FB1B68A83D0049BA37 /* JTCircleView.m in Sources */,
 				303BAEC41B6A0062007AD195 /* MJPhoto.m in Sources */,
+				303D68BD1B6B1816007BC184 /* BaseCell.m in Sources */,
 				30211B7D1B69003000102C32 /* ToDoTabBarController.m in Sources */,
 				304EB1C61B6874740049BA37 /* IntroductionViewController.m in Sources */,
 				30211B8D1B69058D00102C32 /* DWBubbleMenuButton.m in Sources */,
@@ -2349,6 +2366,7 @@
 				302E3CEE1B69BEA80032395E /* EaseUserHeaderView.m in Sources */,
 				303BAEA41B69C13D007AD195 /* UITapImageView.m in Sources */,
 				303BAEA71B69EA47007AD195 /* UIImageView+Common.m in Sources */,
+				303D68C41B6B5795007BC184 /* MeGroupCell.m in Sources */,
 				30C6AFC81B676AF100A0046C /* UIView+Common.m in Sources */,
 				303BAE9E1B69C0B9007AD195 /* Login.m in Sources */,
 				302E3CE71B69B0600032395E /* Me_RootViewController.m in Sources */,

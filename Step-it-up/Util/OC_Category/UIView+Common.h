@@ -14,7 +14,11 @@
 - (void)addGradientLayerWithColors:(NSArray *)cgColorArray locations:(NSArray *)floatNumArray startPoint:(CGPoint )startPoint endPoint:(CGPoint)endPoint;
 - (CGSize)doubleSizeOfFrame;
 
-// size & origin
+// BadgeTip
+- (void)addBadgeTip:(NSString *)badgeValue withCenterPosition:(CGPoint)center;
+- (void)addBadgeTip:(NSString *)badgeValue;
+- (void)removeBadgeTips;
+// Size & Origin
 - (void)removeBadgeTips;
 - (void)setY:(CGFloat)y;
 - (void)setX:(CGFloat)x;

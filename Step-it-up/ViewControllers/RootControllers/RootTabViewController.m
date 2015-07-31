@@ -80,17 +80,24 @@
     }
 }
 
+#pragma mark - RDVTabBarControllerDelegate
 - (BOOL)tabBarController:(RDVTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
-//    if (tabBarController.selectedViewController != viewController) {
-//        return YES;
-//    }
-//    if (![viewController isKindOfClass:[UINavigationController class]]) {
-//        return YES;
-//    }
-//    UINavigationController *nav = (UINavigationController *)viewController;
-//    if (nav.topViewController != nav.viewControllers[0]) {
-//        return YES;
-//    }
+    if(tabBarController.selectedViewController != viewController){
+        return YES;
+    }
+
+    if (![viewController isKindOfClass:[UINavigationController class]]) {
+        return YES;
+    }
+    UINavigationController *nav = (UINavigationController *)viewController;
+    if (nav.topViewController != nav.viewControllers[0]) {
+        return YES;
+    }
+    if ([nav.topViewController isKindOfClass:[BaseViewController class]]) {
+        
+        BaseViewController *rootVC = (BaseViewController *)nav.topViewController;
+        [rootVC tabBarItemClicked];
+    }
 //    if ([nav isKindOfClass:[RKSwipeBetweenViewControllers class]]) {
 //        RKSwipeBetweenViewControllers *swipeVC = (RKSwipeBetweenViewControllers *)nav;
 //        if ([[swipeVC curViewController] isKindOfClass:[BaseViewController class]]) {
