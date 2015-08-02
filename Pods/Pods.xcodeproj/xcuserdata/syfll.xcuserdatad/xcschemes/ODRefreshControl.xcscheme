@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BC38D5B3418FF484552DBA27"
+               BlueprintIdentifier = "8776CEE87B40C37958529F85"
                BuildableName = "libODRefreshControl.a"
                BlueprintName = "ODRefreshControl"
                ReferencedContainer = "container:Pods.xcodeproj">

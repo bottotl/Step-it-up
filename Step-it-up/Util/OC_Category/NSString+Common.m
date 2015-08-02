@@ -137,7 +137,9 @@
     }
     return NSMakeRange(location, length - location);
 }
-
+- (NSURL *)urlImageWithCodePathResizeToView:(UIView *)view{
+    return [self urlImageWithCodePathResize:2*CGRectGetWidth(view.frame)];
+}
 - (NSString *)stringByTrimmingLeftCharactersInSet:(NSCharacterSet *)characterSet {
     return [self substringWithRange:[self rangeByTrimmingLeftCharactersInSet:characterSet]];
 }
@@ -145,6 +147,17 @@
 - (NSString *)stringByTrimmingRightCharactersInSet:(NSCharacterSet *)characterSet {
     return [self substringWithRange:[self rangeByTrimmingRightCharactersInSet:characterSet]];
 }
+
+
+- (CGFloat)getHeightWithFont:(UIFont *)font constrainedToSize:(CGSize)size{
+    return [self getSizeWithFont:font constrainedToSize:size].height;
+}
+- (CGFloat)getWidthWithFont:(UIFont *)font constrainedToSize:(CGSize)size{
+    return [self getSizeWithFont:font constrainedToSize:size].width;
+}
+
+
+
 //转换拼音
 - (NSString *)transformToPinyin {
     if (self.length <= 0) {

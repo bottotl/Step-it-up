@@ -16,6 +16,7 @@ pod 'SSKeychain', '~> 1.2.3'
 pod 'ZXingObjC', '~> 3.1.0'
 pod 'BlocksKit', '~> 2.2.5'
 pod 'LKAlarmManager', :head
+
 #刷新头
 pod 'ODRefreshControl', '~> 1.2'
 #布局

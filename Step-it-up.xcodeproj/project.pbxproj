@@ -58,6 +58,18 @@
 		303D68BD1B6B1816007BC184 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D68BC1B6B1816007BC184 /* BaseCell.m */; };
 		303D68C01B6B1B66007BC184 /* DiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D68BF1B6B1B66007BC184 /* DiscoverCell.m */; };
 		303D68C41B6B5795007BC184 /* MeGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D68C31B6B5795007BC184 /* MeGroupCell.m */; };
+		3045F9541B6DB7E700627ED2 /* UICustomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9531B6DB7E700627ED2 /* UICustomCollectionView.m */; };
+		3045F9581B6DB84900627ED2 /* TweetMediaItemCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9571B6DB84900627ED2 /* TweetMediaItemCCell.m */; };
+		3045F95B1B6DB88300627ED2 /* TweetMediaItemSingleCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F95A1B6DB88300627ED2 /* TweetMediaItemSingleCCell.m */; };
+		3045F95E1B6DB8EC00627ED2 /* TweetCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F95D1B6DB8EC00627ED2 /* TweetCommentCell.m */; };
+		3045F9611B6DB93B00627ED2 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9601B6DB93B00627ED2 /* Comment.m */; };
+		3045F9641B6DB98800627ED2 /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9631B6DB98800627ED2 /* UILabel+Common.m */; };
+		3045F9671B6DB9CC00627ED2 /* TweetLikeUserCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9661B6DB9CC00627ED2 /* TweetLikeUserCCell.m */; };
+		3045F96A1B6DBA2300627ED2 /* TweetCommentMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9691B6DBA2300627ED2 /* TweetCommentMoreCell.m */; };
+		3045F96E1B6DC6F400627ED2 /* ImageSizeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F96D1B6DC6F400627ED2 /* ImageSizeManager.m */; };
+		3045F9711B6DC7F100627ED2 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9701B6DC7F100627ED2 /* NSObject+Common.m */; };
+		3045F9751B6DD6A300627ED2 /* Tweet+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9741B6DD6A300627ED2 /* Tweet+Size.m */; };
+		3045F9781B6DDA1000627ED2 /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9771B6DDA1000627ED2 /* NSDate+Common.m */; };
 		304EB1C61B6874740049BA37 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1C51B6874740049BA37 /* IntroductionViewController.m */; };
 		304EB1C91B687B2D0049BA37 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1C81B687B2D0049BA37 /* BaseViewController.m */; };
 		304EB1CC1B687B600049BA37 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1CB1B687B600049BA37 /* RegisterViewController.m */; };
@@ -78,6 +90,13 @@
 		304EB1FB1B68A83D0049BA37 /* JTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1F01B68A83D0049BA37 /* JTCircleView.m */; };
 		304EB1FE1B68A9B30049BA37 /* Todo_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1FD1B68A9B30049BA37 /* Todo_RootViewController.m */; };
 		304EB2021B68AC470049BA37 /* UIBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB2011B68AC470049BA37 /* UIBadgeView.m */; };
+		308B91D61B6B663300E255FD /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B91D51B6B663300E255FD /* TweetCell.m */; };
+		308B91D91B6B67B200E255FD /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B91D81B6B67B200E255FD /* Tweet.m */; };
+		308B91DC1B6B6D6C00E255FD /* UITTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B91DB1B6B6D6C00E255FD /* UITTTAttributedLabel.m */; };
+		30AEE0C71B6BBE9C00CABF3D /* UIButton+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE0C61B6BBE9C00CABF3D /* UIButton+User.m */; };
+		30C07CF51B6E4AC900005B6E /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C07CF31B6E4AC900005B6E /* NSDate+Helper.m */; };
+		30C07CF61B6E4AC900005B6E /* README.textile in Resources */ = {isa = PBXBuildFile; fileRef = 30C07CF41B6E4AC900005B6E /* README.textile */; };
+		30C07CFA1B6E68CF00005B6E /* TweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C07CF91B6E68CF00005B6E /* TweetViewController.m */; };
 		30C6AD131B672ABA00A0046C /* EaseStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C6AD121B672ABA00A0046C /* EaseStartView.m */; };
 		30C6AE6A1B672DFB00A0046C /* add_user_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C6AD151B672DFA00A0046C /* add_user_icon@2x.png */; };
 		30C6AE6B1B672DFB00A0046C /* addPictureBgImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C6AD161B672DFA00A0046C /* addPictureBgImage@2x.png */; };
@@ -522,6 +541,31 @@
 		303D68BF1B6B1B66007BC184 /* DiscoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverCell.m; sourceTree = "<group>"; };
 		303D68C21B6B5795007BC184 /* MeGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeGroupCell.h; sourceTree = "<group>"; };
 		303D68C31B6B5795007BC184 /* MeGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeGroupCell.m; sourceTree = "<group>"; };
+		3045F9521B6DB7E700627ED2 /* UICustomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomCollectionView.h; sourceTree = "<group>"; };
+		3045F9531B6DB7E700627ED2 /* UICustomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomCollectionView.m; sourceTree = "<group>"; };
+		3045F9561B6DB84900627ED2 /* TweetMediaItemCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetMediaItemCCell.h; sourceTree = "<group>"; };
+		3045F9571B6DB84900627ED2 /* TweetMediaItemCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMediaItemCCell.m; sourceTree = "<group>"; };
+		3045F9591B6DB88300627ED2 /* TweetMediaItemSingleCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetMediaItemSingleCCell.h; sourceTree = "<group>"; };
+		3045F95A1B6DB88300627ED2 /* TweetMediaItemSingleCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMediaItemSingleCCell.m; sourceTree = "<group>"; };
+		3045F95C1B6DB8EC00627ED2 /* TweetCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCommentCell.h; sourceTree = "<group>"; };
+		3045F95D1B6DB8EC00627ED2 /* TweetCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCommentCell.m; sourceTree = "<group>"; };
+		3045F95F1B6DB93B00627ED2 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		3045F9601B6DB93B00627ED2 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		3045F9621B6DB98800627ED2 /* UILabel+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
+		3045F9631B6DB98800627ED2 /* UILabel+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
+		3045F9651B6DB9CC00627ED2 /* TweetLikeUserCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetLikeUserCCell.h; sourceTree = "<group>"; };
+		3045F9661B6DB9CC00627ED2 /* TweetLikeUserCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetLikeUserCCell.m; sourceTree = "<group>"; };
+		3045F9681B6DBA2300627ED2 /* TweetCommentMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCommentMoreCell.h; sourceTree = "<group>"; };
+		3045F9691B6DBA2300627ED2 /* TweetCommentMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCommentMoreCell.m; sourceTree = "<group>"; };
+		3045F96C1B6DC6F400627ED2 /* ImageSizeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSizeManager.h; sourceTree = "<group>"; };
+		3045F96D1B6DC6F400627ED2 /* ImageSizeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSizeManager.m; sourceTree = "<group>"; };
+		3045F96F1B6DC7F100627ED2 /* NSObject+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
+		3045F9701B6DC7F100627ED2 /* NSObject+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Common.m"; sourceTree = "<group>"; };
+		3045F9721B6DD39A00627ED2 /* JFMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFMacros.h; sourceTree = "<group>"; };
+		3045F9731B6DD6A300627ED2 /* Tweet+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tweet+Size.h"; sourceTree = "<group>"; };
+		3045F9741B6DD6A300627ED2 /* Tweet+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tweet+Size.m"; sourceTree = "<group>"; };
+		3045F9761B6DDA1000627ED2 /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
+		3045F9771B6DDA1000627ED2 /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
 		304EB1C41B6874740049BA37 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
 		304EB1C51B6874740049BA37 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
 		304EB1C71B687B2D0049BA37 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -565,6 +609,19 @@
 		304EB2011B68AC470049BA37 /* UIBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBadgeView.m; sourceTree = "<group>"; };
 		305343081B667F5A00F963A1 /* Step_it_up-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Step_it_up-Prefix.pch"; sourceTree = "<group>"; };
 		305343091B6680A000F963A1 /* APIUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIUrl.h; sourceTree = "<group>"; };
+		308B91D41B6B663300E255FD /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
+		308B91D51B6B663300E255FD /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
+		308B91D71B6B67B200E255FD /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		308B91D81B6B67B200E255FD /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		308B91DA1B6B6D6C00E255FD /* UITTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITTTAttributedLabel.h; sourceTree = "<group>"; };
+		308B91DB1B6B6D6C00E255FD /* UITTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITTTAttributedLabel.m; sourceTree = "<group>"; };
+		30AEE0C51B6BBE9C00CABF3D /* UIButton+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+User.h"; sourceTree = "<group>"; };
+		30AEE0C61B6BBE9C00CABF3D /* UIButton+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+User.m"; sourceTree = "<group>"; };
+		30C07CF21B6E4AC900005B6E /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		30C07CF31B6E4AC900005B6E /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		30C07CF41B6E4AC900005B6E /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
+		30C07CF81B6E68CF00005B6E /* TweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetViewController.h; sourceTree = "<group>"; };
+		30C07CF91B6E68CF00005B6E /* TweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetViewController.m; sourceTree = "<group>"; };
 		30C6AD111B672ABA00A0046C /* EaseStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseStartView.h; sourceTree = "<group>"; };
 		30C6AD121B672ABA00A0046C /* EaseStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseStartView.m; sourceTree = "<group>"; };
 		30C6AD151B672DFA00A0046C /* add_user_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_user_icon@2x.png"; sourceTree = "<group>"; };
@@ -932,6 +989,7 @@
 		301653721B670AA900D94163 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				3045F96B1B6DC6F400627ED2 /* Manager */,
 				304EB1FF1B68AC470049BA37 /* Common */,
 				301653761B670AA900D94163 /* OC_Category */,
 			);
@@ -941,6 +999,8 @@
 		301653761B670AA900D94163 /* OC_Category */ = {
 			isa = PBXGroup;
 			children = (
+				3045F9621B6DB98800627ED2 /* UILabel+Common.h */,
+				3045F9631B6DB98800627ED2 /* UILabel+Common.m */,
 				302745B71B6A09B4007E8DAE /* UITableView+Common.h */,
 				302745B81B6A09B4007E8DAE /* UITableView+Common.m */,
 				303BAEAC1B69FEDF007AD195 /* UIButton+Bootstrap.h */,
@@ -961,6 +1021,12 @@
 				30C6AFC71B676AF100A0046C /* UIView+Common.m */,
 				304EB1D61B6899E20049BA37 /* UIBarButtonItem+Common.h */,
 				304EB1D71B6899E20049BA37 /* UIBarButtonItem+Common.m */,
+				30AEE0C51B6BBE9C00CABF3D /* UIButton+User.h */,
+				30AEE0C61B6BBE9C00CABF3D /* UIButton+User.m */,
+				3045F96F1B6DC7F100627ED2 /* NSObject+Common.h */,
+				3045F9701B6DC7F100627ED2 /* NSObject+Common.m */,
+				3045F9761B6DDA1000627ED2 /* NSDate+Common.h */,
+				3045F9771B6DDA1000627ED2 /* NSDate+Common.m */,
 			);
 			path = OC_Category;
 			sourceTree = "<group>";
@@ -998,6 +1064,7 @@
 				301B68FE1B6674030011CE91 /* AppDelegate.m */,
 				305343091B6680A000F963A1 /* APIUrl.h */,
 				30211B891B69042F00102C32 /* SIUMacros.h */,
+				3045F9721B6DD39A00627ED2 /* JFMacros.h */,
 				301B69091B6674030011CE91 /* Assets.xcassets */,
 				301B690E1B6674030011CE91 /* Info.plist */,
 				30211B671B68FFE500102C32 /* StoryBoard */,
@@ -1129,12 +1196,18 @@
 		303BAE9B1B69C08D007AD195 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3045F95F1B6DB93B00627ED2 /* Comment.h */,
+				3045F9601B6DB93B00627ED2 /* Comment.m */,
 				302745AF1B6A05E9007E8DAE /* HtmlMedia.h */,
 				302745B01B6A05E9007E8DAE /* HtmlMedia.m */,
 				303BAE9C1B69C0B9007AD195 /* Login.h */,
 				303BAE9D1B69C0B9007AD195 /* Login.m */,
 				303BAE9F1B69C0C4007AD195 /* User.h */,
 				303BAEA01B69C0C4007AD195 /* User.m */,
+				308B91D71B6B67B200E255FD /* Tweet.h */,
+				308B91D81B6B67B200E255FD /* Tweet.m */,
+				3045F9731B6DD6A300627ED2 /* Tweet+Size.h */,
+				3045F9741B6DD6A300627ED2 /* Tweet+Size.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1142,6 +1215,10 @@
 		303BAEA81B69F689007AD195 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				3045F9681B6DBA2300627ED2 /* TweetCommentMoreCell.h */,
+				3045F9691B6DBA2300627ED2 /* TweetCommentMoreCell.m */,
+				3045F95C1B6DB8EC00627ED2 /* TweetCommentCell.h */,
+				3045F95D1B6DB8EC00627ED2 /* TweetCommentCell.m */,
 				302745BA1B6A1772007E8DAE /* UserInfoIconCell.h */,
 				302745BB1B6A1772007E8DAE /* UserInfoIconCell.m */,
 				303D68BB1B6B1816007BC184 /* BaseCell.h */,
@@ -1150,6 +1227,8 @@
 				303D68BF1B6B1B66007BC184 /* DiscoverCell.m */,
 				303D68C21B6B5795007BC184 /* MeGroupCell.h */,
 				303D68C31B6B5795007BC184 /* MeGroupCell.m */,
+				308B91D41B6B663300E255FD /* TweetCell.h */,
+				308B91D51B6B663300E255FD /* TweetCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1180,9 +1259,32 @@
 			path = MJPhotoBrowser;
 			sourceTree = "<group>";
 		};
+		3045F9551B6DB84900627ED2 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				3045F9651B6DB9CC00627ED2 /* TweetLikeUserCCell.h */,
+				3045F9661B6DB9CC00627ED2 /* TweetLikeUserCCell.m */,
+				3045F9591B6DB88300627ED2 /* TweetMediaItemSingleCCell.h */,
+				3045F95A1B6DB88300627ED2 /* TweetMediaItemSingleCCell.m */,
+				3045F9561B6DB84900627ED2 /* TweetMediaItemCCell.h */,
+				3045F9571B6DB84900627ED2 /* TweetMediaItemCCell.m */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		3045F96B1B6DC6F400627ED2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3045F96C1B6DC6F400627ED2 /* ImageSizeManager.h */,
+				3045F96D1B6DC6F400627ED2 /* ImageSizeManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		304EB1B81B686CBB0049BA37 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				30C07CF71B6E68A100005B6E /* Discover */,
 				302E3CE81B69BC770032395E /* Reuse */,
 				30211B621B68F06500102C32 /* Todo */,
 				304EB1C31B6874450049BA37 /* Login */,
@@ -1258,6 +1360,10 @@
 		304EB1FF1B68AC470049BA37 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3045F9521B6DB7E700627ED2 /* UICustomCollectionView.h */,
+				3045F9531B6DB7E700627ED2 /* UICustomCollectionView.m */,
+				308B91DA1B6B6D6C00E255FD /* UITTTAttributedLabel.h */,
+				308B91DB1B6B6D6C00E255FD /* UITTTAttributedLabel.m */,
 				304EB2001B68AC470049BA37 /* UIBadgeView.h */,
 				304EB2011B68AC470049BA37 /* UIBadgeView.m */,
 				303BAEA21B69C13D007AD195 /* UITapImageView.h */,
@@ -1269,6 +1375,7 @@
 		305341811B667EBC00F963A1 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				30C07CF11B6E4AC900005B6E /* NSDate+Helper */,
 				302745B21B6A07C0007E8DAE /* NSStringEmojize */,
 				302745A81B6A05A0007E8DAE /* YLGIFImage */,
 				303BAEAF1B6A0062007AD195 /* MJPhotoBrowser */,
@@ -1282,6 +1389,7 @@
 		3053430B1B6680E000F963A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3045F9551B6DB84900627ED2 /* CollectionCell */,
 				303BAEA81B69F689007AD195 /* Cell */,
 				302E3CEC1B69BEA80032395E /* EaseUserHeaderView.h */,
 				302E3CED1B69BEA80032395E /* EaseUserHeaderView.m */,
@@ -1289,6 +1397,25 @@
 				30C6AD121B672ABA00A0046C /* EaseStartView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		30C07CF11B6E4AC900005B6E /* NSDate+Helper */ = {
+			isa = PBXGroup;
+			children = (
+				30C07CF21B6E4AC900005B6E /* NSDate+Helper.h */,
+				30C07CF31B6E4AC900005B6E /* NSDate+Helper.m */,
+				30C07CF41B6E4AC900005B6E /* README.textile */,
+			);
+			path = "NSDate+Helper";
+			sourceTree = "<group>";
+		};
+		30C07CF71B6E68A100005B6E /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				30C07CF81B6E68CF00005B6E /* TweetViewController.h */,
+				30C07CF91B6E68CF00005B6E /* TweetViewController.m */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 		30C6AD141B672DFA00A0046C /* Images */ = {
@@ -2006,6 +2133,7 @@
 				303BAEC51B6A0062007AD195 /* MJPhotoBrowser.bundle in Resources */,
 				30C6AE8B1B672DFB00A0046C /* creator_image@2x.png in Resources */,
 				30C6AF911B672DFB00A0046C /* tipIcon_TaskComment@2x.png in Resources */,
+				30C07CF61B6E4AC900005B6E /* README.textile in Resources */,
 				30C6AFA41B672DFB00A0046C /* xtsegment_bordor_left@2x.png in Resources */,
 				30C6AF6A1B672DFB00A0046C /* taskOwner@2x.png in Resources */,
 				30C6AF771B672DFB00A0046C /* task_activity_icon_create@2x.png in Resources */,
@@ -2329,12 +2457,15 @@
 				304EB1F91B68A83D0049BA37 /* JTCalendarMonthWeekDaysView.m in Sources */,
 				304EB1C91B687B2D0049BA37 /* BaseViewController.m in Sources */,
 				30211B871B69011800102C32 /* XHPopMenuItem.m in Sources */,
+				3045F9641B6DB98800627ED2 /* UILabel+Common.m in Sources */,
 				303BAEC91B6A0062007AD195 /* MJPhotoToolbar.m in Sources */,
 				304EB1F81B68A83D0049BA37 /* JTCalendarMonthView.m in Sources */,
 				30211B781B69003000102C32 /* CalenderStyleViewController.m in Sources */,
+				30AEE0C71B6BBE9C00CABF3D /* UIButton+User.m in Sources */,
 				302745B61B6A07C0007E8DAE /* NSString+Emojize.m in Sources */,
 				303BAECA1B6A0062007AD195 /* MJPhotoView.m in Sources */,
 				30211B7E1B69003000102C32 /* ToDoTypeStyleViewController.m in Sources */,
+				308B91D61B6B663300E255FD /* TweetCell.m in Sources */,
 				301B68FF1B6674030011CE91 /* AppDelegate.m in Sources */,
 				304EB1F21B68A83D0049BA37 /* JTCalendarAppearance.m in Sources */,
 				303BAEA11B69C0C4007AD195 /* User.m in Sources */,
@@ -2343,7 +2474,10 @@
 				30C6AD131B672ABA00A0046C /* EaseStartView.m in Sources */,
 				3016537D1B67205100D94163 /* UIImage+Common.m in Sources */,
 				302745BF1B6A1A04007E8DAE /* Discover_RootViewController.m in Sources */,
+				30C07CF51B6E4AC900005B6E /* NSDate+Helper.m in Sources */,
 				30211B7B1B69003000102C32 /* ToDoAllStyleViewController.m in Sources */,
+				3045F95E1B6DB8EC00627ED2 /* TweetCommentCell.m in Sources */,
+				3045F9751B6DD6A300627ED2 /* Tweet+Size.m in Sources */,
 				304EB1F71B68A83D0049BA37 /* JTCalendarMenuView.m in Sources */,
 				303BAECC1B6A0062007AD195 /* UIImageView+MJWebCache.m in Sources */,
 				30C6AFB61B67441C00A0046C /* NSString+Common.m in Sources */,
@@ -2352,9 +2486,11 @@
 				30211B7C1B69003000102C32 /* ToDoCalenderStyleViewController.m in Sources */,
 				303BAEAE1B69FEDF007AD195 /* UIButton+Bootstrap.m in Sources */,
 				304EB1FE1B68A9B30049BA37 /* Todo_RootViewController.m in Sources */,
+				30C07CFA1B6E68CF00005B6E /* TweetViewController.m in Sources */,
 				304EB1FB1B68A83D0049BA37 /* JTCircleView.m in Sources */,
 				303BAEC41B6A0062007AD195 /* MJPhoto.m in Sources */,
 				303D68BD1B6B1816007BC184 /* BaseCell.m in Sources */,
+				3045F96A1B6DBA2300627ED2 /* TweetCommentMoreCell.m in Sources */,
 				30211B7D1B69003000102C32 /* ToDoTabBarController.m in Sources */,
 				304EB1C61B6874740049BA37 /* IntroductionViewController.m in Sources */,
 				30211B8D1B69058D00102C32 /* DWBubbleMenuButton.m in Sources */,
@@ -2372,25 +2508,35 @@
 				302E3CE71B69B0600032395E /* Me_RootViewController.m in Sources */,
 				302745B11B6A05E9007E8DAE /* HtmlMedia.m in Sources */,
 				304EB1CC1B687B600049BA37 /* RegisterViewController.m in Sources */,
+				308B91DC1B6B6D6C00E255FD /* UITTTAttributedLabel.m in Sources */,
 				304EB1F61B68A83D0049BA37 /* JTCalendarMenuMonthView.m in Sources */,
+				308B91D91B6B67B200E255FD /* Tweet.m in Sources */,
 				301B68FC1B6674030011CE91 /* main.m in Sources */,
 				303BAEC31B6A0062007AD195 /* MBProgressHUD+Add.m in Sources */,
 				304EB1D81B6899E20049BA37 /* UIBarButtonItem+Common.m in Sources */,
 				303BAEC71B6A0062007AD195 /* MJPhotoLoadingView.m in Sources */,
 				304EB1D51B6881420049BA37 /* RootTabViewController.m in Sources */,
 				30211B7A1B69003000102C32 /* SIUCreateScheduleViewController.m in Sources */,
+				3045F9711B6DC7F100627ED2 /* NSObject+Common.m in Sources */,
+				3045F9671B6DB9CC00627ED2 /* TweetLikeUserCCell.m in Sources */,
 				302745AD1B6A05A0007E8DAE /* YLGIFImage.m in Sources */,
 				3016537A1B670B0C00D94163 /* UIColor+expanded.m in Sources */,
 				304EB1F31B68A83D0049BA37 /* JTCalendarContentView.m in Sources */,
 				304EB2021B68AC470049BA37 /* UIBadgeView.m in Sources */,
+				3045F9541B6DB7E700627ED2 /* UICustomCollectionView.m in Sources */,
 				30211B881B69011800102C32 /* XHPopMenuItemView.m in Sources */,
 				302745AE1B6A05A0007E8DAE /* YLImageView.m in Sources */,
+				3045F96E1B6DC6F400627ED2 /* ImageSizeManager.m in Sources */,
 				303BAECB1B6A0062007AD195 /* SDWebImageManager+MJ.m in Sources */,
 				301B69081B6674030011CE91 /* Step_it_up.xcdatamodeld in Sources */,
 				303BAEC61B6A0062007AD195 /* MJPhotoBrowser.m in Sources */,
+				3045F9781B6DDA1000627ED2 /* NSDate+Common.m in Sources */,
 				304EB1D21B687BC30049BA37 /* LoginViewController.m in Sources */,
+				3045F9611B6DB93B00627ED2 /* Comment.m in Sources */,
+				3045F9581B6DB84900627ED2 /* TweetMediaItemCCell.m in Sources */,
 				303BAEC81B6A0062007AD195 /* MJPhotoProgressView.m in Sources */,
 				304EB1F11B68A83D0049BA37 /* JTCalendar.m in Sources */,
+				3045F95B1B6DB88300627ED2 /* TweetMediaItemSingleCCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

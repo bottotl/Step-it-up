@@ -12,6 +12,8 @@
 #import "RDVTabBarController.h"
 #import "SVPullToRefresh.h"
 
+#import "TweetViewController.h"
+
 @interface Discover_RootViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *myTableView;
 @property (nonatomic, strong) ODRefreshControl *refreshControl;
@@ -147,6 +149,35 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0 ) {
+        TweetViewController * tweetVC = [[TweetViewController alloc]init];
+        [self.navigationController pushViewController:tweetVC animated:YES];
+    }else if (indexPath.section == 1){
+        switch (indexPath.row) {
+            case 0:{
+                TweetViewController * tweetVC = [[TweetViewController alloc]init];
+                [self.navigationController pushViewController:tweetVC animated:YES];
+            }
+                break;
+            case 1:{
+                TweetViewController * tweetVC = [[TweetViewController alloc]init];
+                [self.navigationController pushViewController:tweetVC animated:YES];
+            }
+                break;
+            case 2:{
+                TweetViewController * tweetVC = [[TweetViewController alloc]init];
+                [self.navigationController pushViewController:tweetVC animated:YES];
+            }
+                break;
+            default:
+                break;
+        }
+        
+    }else if (indexPath.section == 2){
+        TweetViewController * tweetVC = [[TweetViewController alloc]init];
+        [self.navigationController pushViewController:tweetVC animated:YES];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {

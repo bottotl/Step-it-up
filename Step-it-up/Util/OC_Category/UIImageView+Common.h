@@ -10,4 +10,6 @@
 
 @interface UIImageView (Common)
 - (void)doBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)cornerRadius;
+- (void)doCircleFrame;
+- (void)doNotCircleFrame;
 @end
