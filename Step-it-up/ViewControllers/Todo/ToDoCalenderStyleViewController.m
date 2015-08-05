@@ -7,10 +7,10 @@
 //
 
 #import "ToDoCalenderStyleViewController.h"
-#import "SIUCreateScheduleViewController.h"
 #import "SIUMacros.h"
-//#import "XHPopMenu.h"
+#import "XHPopMenu.h"
 #import "LKAlarmMamager.h"
+#import "ScheduleCell.h"
 
 #define kDefaultAnimationDuration 0.25f
 #define FontSize 23.0f
@@ -21,8 +21,6 @@
 }
 @property (weak, nonatomic) IBOutlet UITableView *scheduleTableView;
 
-//@property (nonatomic, strong) XHPopMenu *popMenu;
-
 @end
 
 @implementation ToDoCalenderStyleViewController
@@ -30,10 +28,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //设置字体（不用了）
-    //[self setFontFamily:@"FagoOfficeSans-Regular" forView:self.view andSubViews:YES];
-    
     
     //添加日历阴影
     CALayer * calendarLayer = self.calendarContentView.superview.layer;
@@ -52,9 +46,6 @@
     changeDateBtnLayer.shadowOffset=CGSizeMake(0, 2);
     changeDateBtnLayer.shadowOpacity=0.5;
     changeDateBtnLayer.shadowRadius=3;
-    
-    
-    
     
 
     //添加 changeDateBtn 响应事件
@@ -105,61 +96,9 @@
     _scheduleTableView.backgroundColor = [UIColor clearColor];
     [_scheduleTableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     _scheduleTableView.backgroundView = [[UIView alloc]init];
-//    UIView * tableViewHeadView = [[UIView alloc]init];
-//    tableViewHeadView = [ReminderHead CreateCell];
-//    CGRect headFrame = tableViewHeadView.frame;
-//    [tableViewHeadView addSubview:[ReminderHead CreateCell]];
-//    _scheduleTableView.tableHeaderView = tableViewHeadView;
+    [_scheduleTableView registerClass:[ScheduleCell class] forCellReuseIdentifier:JFScheduleCell];
 
 }
-//以前解决抽屉效果bug用的代码
-//-(void)HidenView{
-//    if (self.is_hiden == NO) {
-//        self.is_hiden = YES;
-//        //隐藏日历
-//        NSMutableArray * views = [self.calendarMenuView getViews];
-//        NSMutableArray * viewsD = [self.calendarContentView getViews];
-//        for(int i = 0 ; i< views.count;i++)
-//        {
-//            if (i==1) {
-//                UIView *view = views[i];
-//                view.hidden = NO;
-//            }else{
-//                UIView *view = views[i];
-//                view.hidden = YES;
-//            }
-//        }
-//        for(int i = 0 ; i< viewsD.count;i++)
-//        {
-//            if (i==1) {
-//                UIView *view = viewsD[i];
-//                view.hidden = NO;
-//            }else{
-//                UIView *view = viewsD[i];
-//                view.hidden = YES;
-//            }
-//        }
-//
-//
-//    }
-//    
-//}
-//-(void)ShowView{
-//    if (self.is_hiden == YES) {
-//        self.is_hiden =NO;
-//        //显示日历
-//        NSMutableArray * views = [self.calendarMenuView getViews];
-//        NSMutableArray * viewsD = [self.calendarContentView getViews];
-//        for (UIView * view in views){
-//            view.hidden = NO;
-//        }
-//        for (UIView * view in viewsD){
-//            view.hidden = NO;
-//        }
-//    }
-//
-//}
-
 #pragma mark - Action
 
 #pragma mark enterQRCodeController要修改
@@ -172,51 +111,6 @@
     [self performSegueWithIdentifier:@"createSchedule" sender:self];
     printf("我要创建日程辣 ：）\n");
 }
-
-#pragma mark - 初始化NaviItem
--(void)initMyNaviItem{
-    //找导航栏背景请转DSNavigationBar
-    //导航栏在StoryBoard->navigationController->navigationBar
-//这是旧版本
-//    //today button
-//    UIButton *myTodayButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//    myTodayButton.frame=CGRectMake(0, 0, 30, 30);
-//    [myTodayButton setTitle:@"today" forState:UIControlStateNormal];
-//    [myTodayButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-//    [myTodayButton addTarget:self action:@selector(didGoTodayTouch:) forControlEvents:UIControlEventTouchUpInside];
-//    
-//    self.navigationItem.titleView = myTodayButton;
-//    
-//    //change button
-//    UIBarButtonItem *changeButton = [[UIBarButtonItem alloc]initWithTitle:@"Change" style:UIBarButtonItemStyleDone target:self action:@selector(didChangeModeTouch:)];
-//    NSMutableArray * leftButtons = [[NSMutableArray alloc]init];
-//    [leftButtons addObject:changeButton];
-//    self.navigationItem.leftBarButtonItems = leftButtons;
-//    
-//    
-    //add Button
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showMenuOnView:)];
-    [self.navigationItem.rightBarButtonItem setTintColor:[UIColor whiteColor]];
-    
-    //这是新版本
-    UIButton * title = [UIButton buttonWithType:UIButtonTypeSystem];
-    title.titleLabel.font = [UIFont systemFontOfSize:FontSize];
-    [title setTitle:@"日程" forState:UIControlStateNormal];
-    [title setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [title setTintColor:[UIColor whiteColor]];
-    self.navigationItem.titleView = title;
-    
-    
-}
-
--(void)deleteMyNaviItem{
-    self.navigationItem.titleView = nil;
-    
-    self.navigationItem.leftBarButtonItems = nil;
-    self.navigationItem.rightBarButtonItem = nil;
-}
-
-
 
 
 #pragma mark - Buttons callback
@@ -239,52 +133,6 @@
     
     [self transitionExample];
 }
-
-//- (void)showMenuOnView:(UIBarButtonItem *)buttonItem {
-//    [self.popMenu showMenuOnView:self.view atPoint:CGPointZero];
-//}
-//
-//
-//#pragma mark - Propertys
-//#pragma mark 添加按钮（popMenu）
-//- (XHPopMenu *)popMenu {
-//    if (!_popMenu) {
-//        NSMutableArray *popMenuItems = [[NSMutableArray alloc] initWithCapacity:3];
-//        for (int i = 0; i < 2; i ++) {
-//            NSString *imageName;
-//            NSString *title;
-//            switch (i) {
-//                case 0: {
-//                    imageName = @"contacts_add_newmessage";
-//                    title = @"添加日程";
-//                    break;
-//                }
-//                case 1: {
-//                    imageName = @"contacts_add_friend";
-//                    title = @"发表状态";
-//                    break;
-//                }
-//                default:
-//                    break;
-//            }
-//            XHPopMenuItem *popMenuItem = [[XHPopMenuItem alloc] initWithImage:[UIImage imageNamed:imageName] title:title];
-//            [popMenuItems addObject:popMenuItem];
-//        }
-//        
-//        WEAKSELF
-//        _popMenu = [[XHPopMenu alloc] initWithMenus:popMenuItems];
-//        _popMenu.popMenuDidSlectedCompled = ^(NSInteger index, XHPopMenuItem *popMenuItems) {
-//            if (index == 1) {
-//                printf("发表状态 index 1\n");
-//                //[weakSelf enterQRCodeController];
-//            }else if (index == 0 ) {
-//                printf("添加日程 index 0\n");
-//                [weakSelf enterCreateScheduleController];
-//            }
-//        };
-//    }
-//    return _popMenu;
-//}
 
 
 
@@ -309,7 +157,6 @@
     NSLog(@"Date: %@ - %ld events", date, [events count]);
     
     [self getLKAlarmEvents];
-#warning 这个地方是测试假数据用的
     tableViewDateSource = [self getEventsOneDay:date];
     [self.tableView reloadData];
     //点击日期后改变显示模式
@@ -344,13 +191,10 @@
     NSArray *events;
     
     NSString *key = [[self dateFormatter] stringFromDate:date];
-    #warning 测试假数据方便使用的
-    events = [NSArray arrayWithObjects:@"日程1",@"日程2",@"日程3",@"日程4",nil];
-    #warning 这个地方是读取本地数据的,测试完之后记得改回去
-//    events = [[NSArray alloc]initWithArray:[(NSMutableDictionary*)eventsByDate[key] allValues]];
-//    for (LKAlarmEvent *event in events) {
-//        NSLog(@"Event:%@ - Date:%@",event.title ,key);
-//    }
+    events = [[NSArray alloc]initWithArray:[(NSMutableDictionary*)eventsByDate[key] allValues]];
+    for (LKAlarmEvent *event in events) {
+        NSLog(@"Event:%@ - Date:%@",event.title ,key);
+    }
     
     return events;
 }
@@ -402,7 +246,9 @@
 #pragma mark - UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell * cell = [[UITableViewCell alloc]init];
+    
+    ScheduleCell * cell = [tableView dequeueReusableCellWithIdentifier:JFScheduleCell forIndexPath:indexPath];
+    [cell setEvent:tableViewDateSource[indexPath.row]];
     return cell;
 }
 
@@ -413,21 +259,21 @@
     NSLog(@"reminderImage Touch Action");
 }
 #pragma mark - UITableViewDelegate
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return 65.0;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [ScheduleCell cellHeight:tableViewDateSource[indexPath.row]];
+}
 -(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     return nil;
 }
 #pragma mark - View
 -(void)viewWillAppear:(BOOL)animated{
-    [self initMyNaviItem];
+    [super viewWillDisappear:animated];
     [self.tableView reloadData];
     
 }
 -(void)viewDidDisappear:(BOOL)animated{
-    [self deleteMyNaviItem];
+    [super viewDidDisappear:animated];
 }
 
 

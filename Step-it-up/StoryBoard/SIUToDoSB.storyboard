@@ -207,7 +207,7 @@
                         <outlet property="calendarContentViewHeight" destination="aEs-hl-8nL" id="LvU-Kv-YIw"/>
                         <outlet property="calendarMenuView" destination="hlc-AA-dMG" id="L5R-OQ-c7A"/>
                         <outlet property="changeDateBtn" destination="2rr-Zg-mDk" id="AzH-Gy-1fe"/>
-                        <outlet property="tableView" destination="TEZ-kg-PYz" id="8mQ-gr-MY9"/>
+                        <outlet property="scheduleTableView" destination="TEZ-kg-PYz" id="iCr-0j-yp0"/>
                         <segue destination="7d1-iK-nC5" kind="show" identifier="showPlanSegue" id="kac-AU-gYh"/>
                         <segue destination="Ly8-zj-xFH" kind="showDetail" identifier="createSchedule" id="sw0-HC-XI5"/>
                     </connections>

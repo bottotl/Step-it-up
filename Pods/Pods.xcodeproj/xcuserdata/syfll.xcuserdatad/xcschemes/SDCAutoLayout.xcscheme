@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9883F78AB2352C89063D53E4"
+               BlueprintIdentifier = "7FF3692CA98D2C3307E220F5"
                BuildableName = "libSDCAutoLayout.a"
                BlueprintName = "SDCAutoLayout"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -6,8 +6,13 @@
 //  Copyright © 2015年 JFT0M. All rights reserved.
 //
 
+#define JFScheduleCell @"ScheduleCell"
+
 #import "BaseCell.h"
+#import "LKAlarmEvent.h"
+
 
 @interface ScheduleCell : BaseCell
-
+@property (nonatomic,strong) LKAlarmEvent *event;
++(CGFloat)cellHeight:(LKAlarmEvent *)event;
 @end

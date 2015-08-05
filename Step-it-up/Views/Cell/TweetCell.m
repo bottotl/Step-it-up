@@ -330,7 +330,6 @@
         if (_tweet.htmlMedia.imageItems.count == 1) {
             TweetMediaItemSingleCCell *ccell = [collectionView dequeueReusableCellWithReuseIdentifier:kCCellIdentifier_TweetMediaItemSingle forIndexPath:indexPath];
             ccell.curMediaItem = curMediaItem;
-            //不知道是干嘛的
             ccell.refreshSingleCCellBlock = ^(){
                 if (_refreshSingleCCellBlock) {
                     _refreshSingleCCellBlock();

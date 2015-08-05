@@ -51,6 +51,8 @@
 #import "UIViewController+Swizzle.h"
 #import "BaseNavigationController.h"
 
+#import "Masonry.h"
+#import "LKAlarmMamager.h"
 #import "RDVTabBarController.h"
 #import "RDVTabBarItem.h"
 #import "MJPhotoBrowser.h"
@@ -58,8 +60,7 @@
 #import "SVPullToRefresh.h"
 #import <UIImage+BlurredFrame/UIImage+BlurredFrame.h>
 #import <ReactiveCocoa/RACEXTScope.h>
-#import <Masonry/Masonry.h>
-#import <ReactiveCocoa.h>
+#import <ReactiveCocoa.h>
 
 #import "JFMacros.h"
 #import "SIUMacros.h"

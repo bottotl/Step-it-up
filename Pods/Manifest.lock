@@ -36,20 +36,11 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - FMDB (2.5):
-    - FMDB/standard (= 2.5)
-  - FMDB/common (2.5)
-  - FMDB/standard (2.5):
-    - FMDB/common
   - FontAwesome+iOS (0.1.4)
   - hpple (0.2.0)
   - iVersion (1.11.4)
   - JazzHands (2.0.3)
   - JDStatusBarNotification (1.5.2)
-  - LKAlarmManager (HEAD based on 0.3):
-    - LKDBHelper
-  - LKDBHelper (2.1.4):
-    - FMDB
   - MarqueeLabel (2.2.5)
   - Masonry (0.5.3)
   - MBProgressHUD (0.9)
@@ -118,7 +109,6 @@ DEPENDENCIES:
   - iVersion (~> 1.11.4)
   - JazzHands (~> 2.0.0)
   - JDStatusBarNotification (~> 1.5.2)
-  - LKAlarmManager (HEAD)
   - MarqueeLabel
   - Masonry (= 0.5.3)
   - MBProgressHUD (= 0.9)
@@ -145,14 +135,11 @@ SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   APParallaxHeader: 854bc48a2487ca12c702f8a236fec0d89cdac5c3
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   FontAwesome+iOS: 9070b682a9255ca0fdc34bcfb129ad0ba2b73b87
   hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
   iVersion: 2b6ffe708672cb494ba3cab150a94800c2892e81
   JazzHands: 0f3c8578f33f45b2fe73975deed6a5f02f9c22d3
   JDStatusBarNotification: a36d09ccbb047217572b074a61e7ca10dddc5f0a
-  LKAlarmManager: b774bbb8fadf2b95a2135a507d2f824037120479
-  LKDBHelper: 6bde14a7d8d1915dd6f1a960176cc868175dd14d
   MarqueeLabel: 65ca60ee9ba554be34f35339004c6c9fe6366a31
   Masonry: 9f515466afe48632562342a40a1c224071a1a022
   MBProgressHUD: d8e7ea388dc1549a42e0d219067cf5f2c898fb66

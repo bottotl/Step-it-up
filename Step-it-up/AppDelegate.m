@@ -78,6 +78,7 @@
     
 
     [self registerPush];
+    
     return YES;
 }
 
@@ -157,7 +158,18 @@
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
-
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    //日历相关回调
+    [[LKAlarmMamager shareManager] handleOpenURL:url];
+    
+    return YES;
+}
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    //日历相关回调
+    [[LKAlarmMamager shareManager] didReceiveLocalNotification:notification];
+}
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
     // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it.
     if (_persistentStoreCoordinator != nil) {
