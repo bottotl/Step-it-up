@@ -35,4 +35,6 @@
 - (NSString *)localFriendsPath;
 
 - (NSString *)changePasswordTips;
+
++(instancetype)fakeUser;
 @end

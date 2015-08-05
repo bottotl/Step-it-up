@@ -62,8 +62,7 @@
 -(CGFloat)likeUsersHeightWithTweet{
     CGFloat likeUsersHeight = 0;
     if (self.numOfLikers > 0) {
-        likeUsersHeight = kTweetCell_LikeUserCCell_Height;
-        //        +30*(ceilf([tweet.like_users count]/kTweet_LikeUsersLineCount)-1);
+        likeUsersHeight = kTweetCell_LikeUsersCCell_Height;
     }
     return likeUsersHeight;
 }
@@ -91,4 +90,16 @@
     }
     return commentListViewHeight;
 }
+
+- (CGFloat)locationHeight{
+    CGFloat ocationHeight = 0;
+    if ( self.location.length > 0) {
+        ocationHeight = 15 + kTweetCell_LocationCCell_Pading;
+    }else{
+        ocationHeight = 0;
+    }
+    return ocationHeight;
+}
+
+
 @end

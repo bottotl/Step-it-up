@@ -23,5 +23,5 @@ typedef NS_ENUM(NSInteger, CommentSendType) {
 @property (readwrite, nonatomic, strong) NSDate *created_at;
 @property (readwrite, nonatomic, strong) HtmlMedia *htmlMedia;
 
-
++(instancetype)fakeComment;
 @end

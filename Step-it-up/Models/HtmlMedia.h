@@ -46,6 +46,9 @@ typedef NS_ENUM(NSInteger, MediaShowType) {
 + (void)addLinkStr:(NSString *)linkStr type:(HtmlMediaItemType)type toString:(NSMutableString *)curString andMediaItems:(NSMutableArray *)itemList;
 + (void)addMediaItemUser:(User *)curUser toString:(NSMutableString *)curString andMediaItems:(NSMutableArray *)itemList;
 
+
++(instancetype)fakeHtmlMedia;
+
 @end
 
 
@@ -61,4 +64,7 @@ typedef NS_ENUM(NSInteger, MediaShowType) {
 
 - (NSString *)displayStr;
 - (BOOL)isGif;
+
++(instancetype)fakeHtmlMediaItem;
+
 @end

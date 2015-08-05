@@ -1,18 +1,18 @@
 //
-//  TweetViewController.m
+//  TweetDetailViewController.m
 //  Step-it-up
 //
-//  Created by syfll on 15/8/2.
+//  Created by syfll on 15/8/4.
 //  Copyright © 2015年 JFT0M. All rights reserved.
 //
 
-#import "TweetViewController.h"
+#import "TweetDetailViewController.h"
 
-@interface TweetViewController ()
+@interface TweetDetailViewController ()
 
 @end
 
-@implementation TweetViewController
+@implementation TweetDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

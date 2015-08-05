@@ -78,22 +78,19 @@
     _curComment = curComment;
     _splitLineView.hidden = !has;
     User *curUser = _curComment.owner;
-//    [_commentLabel setWidth:kTweetCommentCell_ContentWidth];
-//    _commentLabel.text = _curComment.content;
-//    [_commentLabel sizeToFit];
     [_commentLabel setLongString:_curComment.content withFitWidth:kTweetCommentCell_ContentWidth maxHeight:kTweetCommentCell_ContentMaxHeight];
     
-#warning for debug
-//    for (HtmlMediaItem *item in _curComment.htmlMedia.mediaItems) {
-//        if (item.displayStr.length > 0 && !(item.type == HtmlMediaItemType_Code ||item.type == HtmlMediaItemType_EmotionEmoji)) {
-//            [_commentLabel addLinkToTransitInformation:[NSDictionary dictionaryWithObject:item forKey:@"value"] withRange:item.range];
-//        }
-//    }
+
+    for (HtmlMediaItem *item in _curComment.htmlMedia.mediaItems) {
+        if (item.displayStr.length > 0 && !(item.type == HtmlMediaItemType_Code ||item.type == HtmlMediaItemType_EmotionEmoji)) {
+            [_commentLabel addLinkToTransitInformation:[NSDictionary dictionaryWithObject:item forKey:@"value"] withRange:item.range];
+        }
+    }
     CGFloat curBottomY = CGRectGetMaxY(_commentLabel.frame) +kScaleFrom_iPhone5_Desgin(5);
     
     _userNameLabel.text = curUser.name;
-#warning for debug
-    //_timeLabel.text = [_curComment.created_at stringTimesAgo];
+
+    
     [_userNameLabel setY:curBottomY];
     [_userNameLabel sizeToFit];
     
@@ -102,9 +99,13 @@
     frame.origin.x = 15+ CGRectGetWidth(_userNameLabel.frame);
     _timeClockIconView.frame = frame;
     
+    
+    _timeLabel.text = [_curComment.created_at stringTimesAgo];
+    
     frame.origin.x += 15;
     frame.size = _timeLabel.frame.size;
     _timeLabel.frame = frame;
+    
     [_timeLabel sizeToFit];
 }
 

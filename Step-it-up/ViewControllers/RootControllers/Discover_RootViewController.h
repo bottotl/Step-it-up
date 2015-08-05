@@ -8,6 +8,15 @@
 
 #import "BaseViewController.h"
 
+#import "SVPullToRefresh.h"
+
+#import "ODRefreshControl.h"
+#import "DiscoverCell.h"
+
+#import "RDVTabBarController.h"
+#import "Tweet_RootViewController.h"
+#import "RKSwipeBetweenViewControllers.h"
+
 @interface Discover_RootViewController : BaseViewController
 
 @end

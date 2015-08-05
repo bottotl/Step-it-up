@@ -7,7 +7,7 @@
 //
 
 
-#define kCellIdentifier_Tweet @"TweetCell"
+
 
 
 
@@ -190,10 +190,7 @@
     }];
     //owner姓名
     [self.ownerNameBtn setUserTitle:_tweet.user.name font:[UIFont systemFontOfSize:17] maxWidth:(kTweetCell_ContentWidth-85)];
-    //owner冒泡text内容
-    //    [self.contentLabel setWidth:kTweetCell_ContentWidth];
-    //    self.contentLabel.text = _tweet.content;
-    //    [self.contentLabel sizeToFit];
+    
     [self.contentLabel setLongString:_tweet.content withFitWidth:kTweetCell_ContentWidth maxHeight:kTweet_ContentMaxHeight];
     for (HtmlMediaItem *item in _tweet.htmlMedia.mediaItems) {
         if (item.displayStr.length > 0 && !(item.type == HtmlMediaItemType_Code ||item.type == HtmlMediaItemType_EmotionEmoji)) {
@@ -493,16 +490,12 @@
 
 #pragma mark Btn M
 - (void)likeBtnClicked:(id)sender{
-    
-//    [[Coding_NetAPIManager sharedManager] request_Tweet_DoLike_WithObj:_tweet andBlock:^(id data, NSError *error) {
-//        if (data) {
-//            [_tweet changeToLiked:[NSNumber numberWithBool:!_tweet.liked.boolValue]];
-//            [self.likeBtn setImage:[UIImage imageNamed:(_tweet.liked.boolValue? @"tweet_liked_btn":@"tweet_like_btn")] forState:UIControlStateNormal];
-//            if (_likeBtnClickedBlock) {
-//                _likeBtnClickedBlock(_tweet);
-//            }
-//        }
-//    }];
+    _tweet.isLiked = !_tweet.isLiked;
+    NSLog(@"点赞\n");
+    [self.likeBtn setImage:[UIImage imageNamed:(_tweet.isLiked? @"tweet_liked_btn":@"tweet_like_btn")] forState:UIControlStateNormal];
+    if (_likeBtnClickedBlock) {
+     _likeBtnClickedBlock(_tweet);
+    }
 }
 - (void)commentBtnClicked:(id)sender{
     if (_commentClickedBlock) {
@@ -532,17 +525,95 @@
     }
 }
 
-+ (CGFloat)likeCommentBtn_BottomPadingWithTweet:(Tweet *)tweet{
-    if (tweet &&
-        (tweet.numOfLikers > 0)){
-            return 5.0;
-        }else{
-            return 0;
-        }
-}
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
+}
+
++ (CGFloat)cellHeightWithObj:(id)obj{
+    Tweet *tweet = (Tweet *)obj;
+    CGFloat cellHeight = 0;
+    if (tweet.numOfComments > 0 || tweet.numOfLikers > 0) {
+        cellHeight = 6;
+    }else{
+        cellHeight = 3;
+    }
+    cellHeight += 20;
+    cellHeight += kTweetCell_PadingTop;
+    cellHeight += [TweetCell contentLabelHeightWithTweet:tweet];
+    cellHeight += [TweetCell contentMediaHeightWithTweet:tweet];
+    cellHeight += kTweetCell_LikeComment_Height;
+    cellHeight += [[self class] locationHeightWithTweet:tweet];
+    cellHeight += [TweetCell likeCommentBtn_BottomPadingWithTweet:tweet];
+    cellHeight += [TweetCell likeUsersHeightWithTweet:tweet];
+    cellHeight += [TweetCell commentListViewHeightWithTweet:tweet];
+    cellHeight += kTweetCell_PadingBottom;
+    return cellHeight;
+}
+
++ (CGFloat)contentLabelHeightWithTweet:(Tweet *)tweet{
+    return MIN(kTweet_ContentMaxHeight, [tweet.content getHeightWithFont:kTweet_ContentFont constrainedToSize:CGSizeMake(kTweetCell_ContentWidth, CGFLOAT_MAX)]);
+}
+
++ (CGFloat)contentMediaHeightWithTweet:(Tweet *)tweet{
+    CGFloat contentMediaHeight = 0;
+    NSInteger mediaCount = tweet.htmlMedia.imageItems.count;
+    if (mediaCount > 0) {
+        HtmlMediaItem *curMediaItem = tweet.htmlMedia.imageItems.firstObject;
+        contentMediaHeight = (mediaCount == 1)?
+        [TweetMediaItemSingleCCell ccellSizeWithObj:curMediaItem].height:
+        ceilf((float)mediaCount/3)*([TweetMediaItemCCell ccellSizeWithObj:curMediaItem].height+kTweetCell_LikeUserCCell_Pading) - kTweetCell_LikeUserCCell_Pading;
+    }
+    return contentMediaHeight;
+}
+
++ (CGFloat)likeCommentBtn_BottomPadingWithTweet:(Tweet *)tweet{
+    if (tweet &&
+        (tweet.numOfLikers > 0)){
+        return 5.0;
+    }else{
+        return 0;
+    }
+}
++ (CGFloat)locationHeightWithTweet:(Tweet *)tweet{
+    CGFloat ocationHeight = 0;
+    if ( tweet.location.length > 0) {
+        ocationHeight = 15 + kTweetCell_LocationCCell_Pading;
+    }else{
+        ocationHeight = 0;
+    }
+    return ocationHeight;
+}
+
+
++ (CGFloat)likeUsersHeightWithTweet:(Tweet *)tweet{
+    CGFloat likeUsersHeight = 0;
+    if (tweet.numOfLikers> 0) {
+        likeUsersHeight = 45;
+        //        +30*(ceilf([tweet.like_users count]/kTweet_LikeUsersLineCount)-1);
+    }
+    return likeUsersHeight;
+}
+
++ (CGFloat)commentListViewHeightWithTweet:(Tweet *)tweet{
+    if (!tweet) {
+        return 0;
+    }
+    CGFloat commentListViewHeight = 0;
+    
+    NSInteger numOfComments = tweet.numOfComments;
+    BOOL hasMoreComments = tweet.hasMoreComments;
+    
+    for (int i = 0; i < numOfComments; i++) {
+        if (i == numOfComments-1 && hasMoreComments) {
+            commentListViewHeight += [TweetCommentMoreCell cellHeight];
+        }else{
+            Comment *curComment = [tweet.comment_list objectAtIndex:i];
+            commentListViewHeight += [TweetCommentCell cellHeightWithObj:curComment];
+        }
+    }
+    return commentListViewHeight;
 }
 
 @end

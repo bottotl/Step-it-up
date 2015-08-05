@@ -52,4 +52,6 @@
 - (NSInteger)numOfComments;
 
 
+
++(instancetype)fakeInit;
 @end

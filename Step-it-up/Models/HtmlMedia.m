@@ -8,6 +8,16 @@
 
 #import "HtmlMedia.h"
 @implementation HtmlMedia
+
++(instancetype)fakeHtmlMedia{
+    HtmlMedia* htmlMedia = [[HtmlMedia alloc]init];
+    htmlMedia.contentOrigional = @"<a class=\"at-someone\" href=\"/u/xdemo\" rel=\"nofollow\">@xdemo</a> 哈哈 人二一点好，都太聪明了不好，难得二 跟难得糊涂是一个道理";
+    htmlMedia.contentDisplay = [[NSMutableString alloc]initWithString:@"@xdemo 哈哈 人二一点好，都太聪明了不好，难得二 跟难得糊涂是一个道理"];
+    htmlMedia.mediaItems = [[NSMutableArray alloc]initWithArray:@[[HtmlMediaItem fakeHtmlMediaItem]]];
+    htmlMedia.imageItems = [[NSMutableArray alloc]initWithArray:@[[HtmlMediaItem fakeHtmlMediaItem]]];
+    return htmlMedia;
+}
+
 - (instancetype)initWithString:(NSString *)htmlString showType:(MediaShowType)showType{
     self = [super init];
     if (self) {
@@ -169,6 +179,17 @@
 @end
 
 @implementation HtmlMediaItem
+
++(instancetype)fakeHtmlMediaItem{
+    HtmlMediaItem * htmlMediaItem = [[HtmlMediaItem alloc]init];
+    htmlMediaItem.type = HtmlMediaItemType_Image;
+    htmlMediaItem.showType = MediaShowTypeNone;
+    htmlMediaItem.src = @"https://dn-coding-net-production-pp.qbox.me/d3b4b65c-c68a-478a-9e66-ab69fb6de8cb.gif";
+    htmlMediaItem.href =@"https://dn-coding-net-production-pp.qbox.me/d3b4b65c-c68a-478a-9e66-ab69fb6de8cb.gif";
+    htmlMediaItem.name = @"@xdemo";
+    htmlMediaItem.range = NSMakeRange(0, 6);
+    return htmlMediaItem;
+}
 
 - (instancetype)init
 {

@@ -15,4 +15,5 @@
 - (CGFloat)contentMediaHeight;
 - (CGFloat)likeUsersHeightWithTweet;
 - (CGFloat)commentListViewHeight;
+- (CGFloat)locationHeight;
 @end

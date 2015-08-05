@@ -9,6 +9,17 @@
 #import "User.h"
 
 @implementation User
++(instancetype)fakeUser{
+    User *user = [[User alloc]init];
+    user.name = @"JFT0M";
+    user.avatar = @"https://dn-coding-net-avatar.qbox.me/4cc88a4e-7adc-469f-98a5-6091ef2a35c3.jpg";
+    user.global_key = @"hainuo";
+    user.path = @"/u/hainuo";
+    user.pinyinName = @"LIUFENG";
+    user.created_at = [[NSDate alloc]initWithTimeIntervalSinceNow:10];
+    return user;
+}
+
 + (User *)userWithGlobalKey:(NSString *)global_key{
     User *curUser = [[User alloc] init];
     curUser.global_key = global_key;

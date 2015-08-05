@@ -7,16 +7,13 @@
 //
 
 #import "Discover_RootViewController.h"
-#import "ODRefreshControl.h"
-#import "DiscoverCell.h"
-#import "RDVTabBarController.h"
-#import "SVPullToRefresh.h"
 
-#import "TweetViewController.h"
 
 @interface Discover_RootViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *myTableView;
 @property (nonatomic, strong) ODRefreshControl *refreshControl;
+@property (nonatomic, strong) RKSwipeBetweenViewControllers *nav_tweet;
+
 @end
 
 @implementation Discover_RootViewController
@@ -47,6 +44,12 @@
     _refreshControl = [[ODRefreshControl alloc] initInScrollView:self.myTableView];
     [_refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
 
+    _nav_tweet = [RKSwipeBetweenViewControllers newSwipeBetweenViewControllers];
+    [_nav_tweet.viewControllerArray addObjectsFromArray:@[[[Tweet_RootViewController alloc]init],
+                                                         [[Tweet_RootViewController alloc]init]]];
+    _nav_tweet.buttonText = @[@"好友动态", @"日程动态"];
+    
+    
 
 }
 
@@ -150,22 +153,25 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0 ) {
-        TweetViewController * tweetVC = [[TweetViewController alloc]init];
-        [self.navigationController pushViewController:tweetVC animated:YES];
+        
+//        [_nav_tweet setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+//        [self.navigationController presentModalViewController:_nav_tweet animated:YES];
+
+        //[self.navigationController presentViewController:_nav_tweet animated:NO completion:nil ];
     }else if (indexPath.section == 1){
         switch (indexPath.row) {
             case 0:{
-                TweetViewController * tweetVC = [[TweetViewController alloc]init];
+                Tweet_RootViewController * tweetVC = [[Tweet_RootViewController alloc]init];
                 [self.navigationController pushViewController:tweetVC animated:YES];
             }
                 break;
             case 1:{
-                TweetViewController * tweetVC = [[TweetViewController alloc]init];
+                Tweet_RootViewController * tweetVC = [[Tweet_RootViewController alloc]init];
                 [self.navigationController pushViewController:tweetVC animated:YES];
             }
                 break;
             case 2:{
-                TweetViewController * tweetVC = [[TweetViewController alloc]init];
+                Tweet_RootViewController * tweetVC = [[Tweet_RootViewController alloc]init];
                 [self.navigationController pushViewController:tweetVC animated:YES];
             }
                 break;
@@ -174,7 +180,7 @@
         }
         
     }else if (indexPath.section == 2){
-        TweetViewController * tweetVC = [[TweetViewController alloc]init];
+        Tweet_RootViewController * tweetVC = [[Tweet_RootViewController alloc]init];
         [self.navigationController pushViewController:tweetVC animated:YES];
     }
 
