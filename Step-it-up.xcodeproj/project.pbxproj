@@ -43,6 +43,8 @@
 		302745BC1B6A1772007E8DAE /* UserInfoIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745BB1B6A1772007E8DAE /* UserInfoIconCell.m */; };
 		302745BF1B6A1A04007E8DAE /* Discover_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745BE1B6A1A04007E8DAE /* Discover_RootViewController.m */; };
 		302745C51B6A1AD0007E8DAE /* Group_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302745C41B6A1AD0007E8DAE /* Group_RootViewController.m */; };
+		3029C06F1B73298600CC4BFA /* ScheduleHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029C06E1B73298600CC4BFA /* ScheduleHeadCell.m */; };
+		3029C0751B7329AA00CC4BFA /* ScheduleFootCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029C0741B7329AA00CC4BFA /* ScheduleFootCell.m */; };
 		302BB10E1B71A13F000B0A89 /* XHPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 302BB1091B71A13F000B0A89 /* XHPopMenu.m */; };
 		302BB10F1B71A13F000B0A89 /* XHPopMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 302BB10B1B71A13F000B0A89 /* XHPopMenuItem.m */; };
 		302BB1101B71A13F000B0A89 /* XHPopMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 302BB10D1B71A13F000B0A89 /* XHPopMenuItemView.m */; };
@@ -557,6 +559,10 @@
 		302745BE1B6A1A04007E8DAE /* Discover_RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Discover_RootViewController.m; sourceTree = "<group>"; };
 		302745C31B6A1AD0007E8DAE /* Group_RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group_RootViewController.h; sourceTree = "<group>"; };
 		302745C41B6A1AD0007E8DAE /* Group_RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group_RootViewController.m; sourceTree = "<group>"; };
+		3029C06D1B73298600CC4BFA /* ScheduleHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleHeadCell.h; sourceTree = "<group>"; };
+		3029C06E1B73298600CC4BFA /* ScheduleHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleHeadCell.m; sourceTree = "<group>"; };
+		3029C0731B7329AA00CC4BFA /* ScheduleFootCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleFootCell.h; sourceTree = "<group>"; };
+		3029C0741B7329AA00CC4BFA /* ScheduleFootCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleFootCell.m; sourceTree = "<group>"; };
 		302BB1081B71A13F000B0A89 /* XHPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPopMenu.h; sourceTree = "<group>"; };
 		302BB1091B71A13F000B0A89 /* XHPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPopMenu.m; sourceTree = "<group>"; };
 		302BB10A1B71A13F000B0A89 /* XHPopMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPopMenuItem.h; sourceTree = "<group>"; };
@@ -1351,6 +1357,10 @@
 				3045F95D1B6DB8EC00627ED2 /* TweetCommentCell.m */,
 				302DFC231B7088770068B997 /* ScheduleCell.h */,
 				302DFC241B7088770068B997 /* ScheduleCell.m */,
+				3029C06D1B73298600CC4BFA /* ScheduleHeadCell.h */,
+				3029C06E1B73298600CC4BFA /* ScheduleHeadCell.m */,
+				3029C0731B7329AA00CC4BFA /* ScheduleFootCell.h */,
+				3029C0741B7329AA00CC4BFA /* ScheduleFootCell.m */,
 				302745BA1B6A1772007E8DAE /* UserInfoIconCell.h */,
 				302745BB1B6A1772007E8DAE /* UserInfoIconCell.m */,
 				303D68BB1B6B1816007BC184 /* BaseCell.h */,
@@ -2722,6 +2732,7 @@
 				303BAEA71B69EA47007AD195 /* UIImageView+Common.m in Sources */,
 				303D68C41B6B5795007BC184 /* MeGroupCell.m in Sources */,
 				30C6AFC81B676AF100A0046C /* UIView+Common.m in Sources */,
+				3029C0751B7329AA00CC4BFA /* ScheduleFootCell.m in Sources */,
 				302440441B72480C00FE71B3 /* LKAlarmEvent.m in Sources */,
 				303BAE9E1B69C0B9007AD195 /* Login.m in Sources */,
 				302440561B724B3000FE71B3 /* LKDB+Mapping.m in Sources */,
@@ -2747,6 +2758,7 @@
 				3045F9671B6DB9CC00627ED2 /* TweetLikeUserCCell.m in Sources */,
 				302745AD1B6A05A0007E8DAE /* YLGIFImage.m in Sources */,
 				3016537A1B670B0C00D94163 /* UIColor+expanded.m in Sources */,
+				3029C06F1B73298600CC4BFA /* ScheduleHeadCell.m in Sources */,
 				304EB1F31B68A83D0049BA37 /* JTCalendarContentView.m in Sources */,
 				304EB2021B68AC470049BA37 /* UIBadgeView.m in Sources */,
 				30FA4CD11B6EFBE0007418E6 /* READEME.md in Sources */,

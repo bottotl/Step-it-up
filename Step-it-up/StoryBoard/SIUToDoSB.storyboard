@@ -173,10 +173,6 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="cNI-0S-kUP" id="Od5-EU-iux"/>
-                                    <outlet property="delegate" destination="cNI-0S-kUP" id="Jlm-Yn-aJO"/>
-                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rr-Zg-mDk" userLabel="changeDateButton">
                                 <rect key="frame" x="271" y="352" width="58" height="22"/>
@@ -207,7 +203,7 @@
                         <outlet property="calendarContentViewHeight" destination="aEs-hl-8nL" id="LvU-Kv-YIw"/>
                         <outlet property="calendarMenuView" destination="hlc-AA-dMG" id="L5R-OQ-c7A"/>
                         <outlet property="changeDateBtn" destination="2rr-Zg-mDk" id="AzH-Gy-1fe"/>
-                        <outlet property="scheduleTableView" destination="TEZ-kg-PYz" id="iCr-0j-yp0"/>
+                        <outlet property="scheduleTableView" destination="TEZ-kg-PYz" id="2XE-KO-Fqd"/>
                         <segue destination="7d1-iK-nC5" kind="show" identifier="showPlanSegue" id="kac-AU-gYh"/>
                         <segue destination="Ly8-zj-xFH" kind="showDetail" identifier="createSchedule" id="sw0-HC-XI5"/>
                     </connections>

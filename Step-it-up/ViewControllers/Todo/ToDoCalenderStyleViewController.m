@@ -4,6 +4,7 @@
 //
 //  Created by syfll on 14-12-2.
 //  Copyright (c) 2014年 syfll. All rights reserved.
+//  参考https://github.com/smileyborg/TableViewCellWithAutoLayout
 //
 
 #import "ToDoCalenderStyleViewController.h"
@@ -11,6 +12,8 @@
 #import "XHPopMenu.h"
 #import "LKAlarmMamager.h"
 #import "ScheduleCell.h"
+#import "ScheduleFootCell.h"
+#import "ScheduleHeadCell.h"
 
 #define kDefaultAnimationDuration 0.25f
 #define FontSize 23.0f
@@ -18,8 +21,17 @@
 @interface ToDoCalenderStyleViewController (){
     NSMutableDictionary *eventsByDate;
     NSArray * tableViewDateSource;
+
 }
+
+// A dictionary of offscreen cells that are used within the tableView:heightForRowAtIndexPath: method to
+// handle the height calculations. These are never drawn onscreen. The dictionary is in the format:
+//      { NSString *reuseIdentifier : UITableViewCell *offscreenCell, ... }
+@property (strong, nonatomic) NSMutableDictionary *offscreenCells;
 @property (weak, nonatomic) IBOutlet UITableView *scheduleTableView;
+
+@property (strong, nonatomic) ScheduleFootCell *tableFootView;
+@property (strong, nonatomic) ScheduleHeadCell *tableHeadView;
 
 @end
 
@@ -28,6 +40,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.offscreenCells = [NSMutableDictionary dictionary];
+    
+    _tableFootView = [[ScheduleFootCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:JFScheduleFootCell];
+    _tableHeadView = [[ScheduleHeadCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:JFScheduleHeadCell];
+    
+    _scheduleTableView.backgroundView = [[UIView alloc]init];
+    [_scheduleTableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    
+    _scheduleTableView.estimatedRowHeight = UITableViewAutomaticDimension;
+    _scheduleTableView.allowsSelection = NO;
+    
+    [_scheduleTableView registerClass:[ScheduleCell class] forCellReuseIdentifier:JFScheduleCell];
+    
+    _scheduleTableView.dataSource = self;
+    _scheduleTableView.delegate = self;
+    //更新一下日程
+    [self updateEvents];
+    
     
     //添加日历阴影
     CALayer * calendarLayer = self.calendarContentView.superview.layer;
@@ -50,17 +81,8 @@
 
     //添加 changeDateBtn 响应事件
     [self.changeDateBtn addTarget:self action:@selector(didChangeModeTouch:) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-    
-    #pragma mark 设置标题栏(最顶上那一条有信号什么的东西)&标题为白色
-    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
-    
-    //设置日程列表
-    [self initScheduleTable];
+    //日历
     self.calendar = [JTCalendar new];
-    //self.is_hiden = NO;
-    //[self ShowView];
     
     {
         self.calendar.calendarAppearance.calendar.firstWeekday = 2; // Sunday == 1, Saturday == 7
@@ -90,15 +112,7 @@
     
     [self.calendar reloadData]; // Must be call in viewDidAppear
 }
-//初始化tableView
--(void)initScheduleTable{
-    
-    _scheduleTableView.backgroundColor = [UIColor clearColor];
-    [_scheduleTableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    _scheduleTableView.backgroundView = [[UIView alloc]init];
-    [_scheduleTableView registerClass:[ScheduleCell class] forCellReuseIdentifier:JFScheduleCell];
 
-}
 #pragma mark - Action
 
 #pragma mark enterQRCodeController要修改
@@ -156,9 +170,9 @@
     
     NSLog(@"Date: %@ - %ld events", date, [events count]);
     
-    [self getLKAlarmEvents];
+    [self updateEvents];
     tableViewDateSource = [self getEventsOneDay:date];
-    [self.tableView reloadData];
+    [self.scheduleTableView reloadData];
     //点击日期后改变显示模式
     [self.calendar setCurrentDate: date];
     
@@ -168,8 +182,8 @@
     }
     
 }
-#pragma mark 获取提醒events
-- (void)getLKAlarmEvents{
+#pragma mark 更新数据
+- (void)updateEvents{
     if (!eventsByDate) {
         eventsByDate = [NSMutableDictionary new];
     }
@@ -187,6 +201,8 @@
     }
     NSLog(@"events count %lu",(unsigned long)events.count);
 }
+//  根据时间获取日程
+//  获取日程前请先调用[self updateEvents]更新数据
 - (NSArray *)getEventsOneDay:(NSDate *)date{
     NSArray *events;
     
@@ -196,8 +212,14 @@
         NSLog(@"Event:%@ - Date:%@",event.title ,key);
     }
     
+    if (!events || events.count == 0) {
+        [self showTableHeadAndFootView:false];
+    }else{
+        [self showTableHeadAndFootView:true];
+    }
     return events;
 }
+
 
 #pragma mark  Transition examples
 
@@ -247,8 +269,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    ScheduleCell * cell = [tableView dequeueReusableCellWithIdentifier:JFScheduleCell forIndexPath:indexPath];
+    ScheduleCell * cell = [tableView dequeueReusableCellWithIdentifier:JFScheduleCell];
+    
     [cell setEvent:tableViewDateSource[indexPath.row]];
+    
+    // Make sure the constraints have been added to this cell, since it may have just been created from scratch
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
+    
     return cell;
 }
 
@@ -261,15 +289,58 @@
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [ScheduleCell cellHeight:tableViewDateSource[indexPath.row]];
+    NSString *reuseIdentifier = JFScheduleCell;
+    
+    ScheduleCell *cell = [self.offscreenCells objectForKey:reuseIdentifier];
+    if (!cell) {
+        cell = [[ScheduleCell alloc] init];
+        [self.offscreenCells setObject:cell forKey:reuseIdentifier];
+    }
+    //设置cell内容
+    [cell setEvent:tableViewDateSource[indexPath.row]];
+    // Make sure the constraints have been added to this cell, since it may have just been created from scratch
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
+    
+    cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
+    // NOTE: if you are displaying a section index (e.g. alphabet along the right side of the table view), or
+    // if you are using a grouped table view style where cells have insets to the edges of the table view,
+    // you'll need to adjust the cell.bounds.size.width to be smaller than the full width of the table view we just
+    // set it to above. See http://stackoverflow.com/questions/3647242 for discussion on the section index width.
+    
+    // Do the layout pass on the cell, which will calculate the frames for all the views based on the constraints
+    // (Note that the preferredMaxLayoutWidth is set on multi-line UILabels inside the -[layoutSubviews] method
+    // in the UITableViewCell subclass
+    [cell setNeedsLayout];
+    [cell layoutIfNeeded];
+    
+    // Get the actual height required for the cell
+    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    
+    // Add an extra point to the height to account for the cell separator, which is added between the bottom
+    // of the cell's contentView and the bottom of the table view cell.
+    height += 20;
+    
+    return height;
 }
 -(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     return nil;
 }
 #pragma mark - View
+-(void)showTableHeadAndFootView:(BOOL)isShow{
+    if (isShow) {
+        self.scheduleTableView.tableHeaderView = self.tableHeadView;
+        self.scheduleTableView.tableFooterView = self.tableFootView;
+    }else{
+        self.scheduleTableView.tableHeaderView = nil;
+        self.scheduleTableView.tableFooterView = nil;
+    }
+    
+}
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [self.tableView reloadData];
+    [self.scheduleTableView reloadData];
     
 }
 -(void)viewDidDisappear:(BOOL)animated{

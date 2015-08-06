@@ -18,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *calendarContentViewHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *backViewHeight;
 @property (weak, nonatomic) IBOutlet UIView *backView;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *changeDateBtn;
 
 // The duration of the expand/collapse animation
