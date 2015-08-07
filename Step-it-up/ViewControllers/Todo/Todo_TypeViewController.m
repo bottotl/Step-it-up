@@ -8,7 +8,8 @@
 
 #import "Todo_TypeViewController.h"
 
-@interface Todo_TypeViewController ()
+@interface Todo_TypeViewController ()<UICollectionViewDelegate , UICollectionViewDataSource>
+@property(strong, nonatomic) UICollectionView * collectionView;
 
 @end
 

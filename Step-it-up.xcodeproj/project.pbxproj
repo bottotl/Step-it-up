@@ -102,6 +102,9 @@
 		304EB1FB1B68A83D0049BA37 /* JTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1F01B68A83D0049BA37 /* JTCircleView.m */; };
 		304EB1FE1B68A9B30049BA37 /* Todo_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1FD1B68A9B30049BA37 /* Todo_RootViewController.m */; };
 		304EB2021B68AC470049BA37 /* UIBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB2011B68AC470049BA37 /* UIBadgeView.m */; };
+		306DF9031B747EF400E979F2 /* TodoTypeCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 306DF9021B747EF400E979F2 /* TodoTypeCCell.m */; };
+		306DF9061B74851500E979F2 /* TweetTodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 306DF9051B74851500E979F2 /* TweetTodoCell.m */; };
+		306DF9091B74A37600E979F2 /* DynamicTodo_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306DF9081B74A37600E979F2 /* DynamicTodo_RootViewController.m */; };
 		308B91D61B6B663300E255FD /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B91D51B6B663300E255FD /* TweetCell.m */; };
 		308B91D91B6B67B200E255FD /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B91D81B6B67B200E255FD /* Tweet.m */; };
 		308B91DC1B6B6D6C00E255FD /* UITTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B91DB1B6B6D6C00E255FD /* UITTTAttributedLabel.m */; };
@@ -680,6 +683,12 @@
 		304EB2011B68AC470049BA37 /* UIBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBadgeView.m; sourceTree = "<group>"; };
 		305343081B667F5A00F963A1 /* Step_it_up-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Step_it_up-Prefix.pch"; sourceTree = "<group>"; };
 		305343091B6680A000F963A1 /* APIUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIUrl.h; sourceTree = "<group>"; };
+		306DF9011B747EF400E979F2 /* TodoTypeCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoTypeCCell.h; sourceTree = "<group>"; };
+		306DF9021B747EF400E979F2 /* TodoTypeCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoTypeCCell.m; sourceTree = "<group>"; };
+		306DF9041B74851500E979F2 /* TweetTodoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetTodoCell.h; sourceTree = "<group>"; };
+		306DF9051B74851500E979F2 /* TweetTodoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetTodoCell.m; sourceTree = "<group>"; };
+		306DF9071B74A37600E979F2 /* DynamicTodo_RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTodo_RootViewController.h; sourceTree = "<group>"; };
+		306DF9081B74A37600E979F2 /* DynamicTodo_RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTodo_RootViewController.m; sourceTree = "<group>"; };
 		308B91D41B6B663300E255FD /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
 		308B91D51B6B663300E255FD /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
 		308B91D71B6B67B200E255FD /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
@@ -1346,6 +1355,8 @@
 			children = (
 				303D68C21B6B5795007BC184 /* MeGroupCell.h */,
 				303D68C31B6B5795007BC184 /* MeGroupCell.m */,
+				306DF9041B74851500E979F2 /* TweetTodoCell.h */,
+				306DF9051B74851500E979F2 /* TweetTodoCell.m */,
 				308B91D41B6B663300E255FD /* TweetCell.h */,
 				308B91D51B6B663300E255FD /* TweetCell.m */,
 				3045F9681B6DBA2300627ED2 /* TweetCommentMoreCell.h */,
@@ -1403,6 +1414,8 @@
 				3045F95A1B6DB88300627ED2 /* TweetMediaItemSingleCCell.m */,
 				3045F9561B6DB84900627ED2 /* TweetMediaItemCCell.h */,
 				3045F9571B6DB84900627ED2 /* TweetMediaItemCCell.m */,
+				306DF9011B747EF400E979F2 /* TodoTypeCCell.h */,
+				306DF9021B747EF400E979F2 /* TodoTypeCCell.m */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -1563,6 +1576,8 @@
 				30FA4CE11B6F57E2007418E6 /* LikersViewController.m */,
 				302DFC401B7097930068B997 /* TweetDetailViewController.h */,
 				302DFC411B7097930068B997 /* TweetDetailViewController.m */,
+				306DF9071B74A37600E979F2 /* DynamicTodo_RootViewController.h */,
+				306DF9081B74A37600E979F2 /* DynamicTodo_RootViewController.m */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -2700,6 +2715,7 @@
 				304EB1F71B68A83D0049BA37 /* JTCalendarMenuView.m in Sources */,
 				303BAECC1B6A0062007AD195 /* UIImageView+MJWebCache.m in Sources */,
 				30C6AFB61B67441C00A0046C /* NSString+Common.m in Sources */,
+				306DF9061B74851500E979F2 /* TweetTodoCell.m in Sources */,
 				303BAEAE1B69FEDF007AD195 /* UIButton+Bootstrap.m in Sources */,
 				302440451B72480C00FE71B3 /* LKAlarmMamager.m in Sources */,
 				30FA4CDA1B6F0E78007418E6 /* RKSwipeBetweenViewControllers.m in Sources */,
@@ -2748,6 +2764,7 @@
 				30FA4CDF1B6F2802007418E6 /* DynamicViewController.m in Sources */,
 				303BAEC71B6A0062007AD195 /* MJPhotoLoadingView.m in Sources */,
 				304EB1D51B6881420049BA37 /* RootTabViewController.m in Sources */,
+				306DF9091B74A37600E979F2 /* DynamicTodo_RootViewController.m in Sources */,
 				30FA4CD91B6F0E78007418E6 /* EasePageViewController.m in Sources */,
 				3045F9711B6DC7F100627ED2 /* NSObject+Common.m in Sources */,
 				3045F9671B6DB9CC00627ED2 /* TweetLikeUserCCell.m in Sources */,
@@ -2766,6 +2783,7 @@
 				301B69081B6674030011CE91 /* Step_it_up.xcdatamodeld in Sources */,
 				302DFC1A1B70560C0068B997 /* Dynamic_RootViewController.m in Sources */,
 				303BAEC61B6A0062007AD195 /* MJPhotoBrowser.m in Sources */,
+				306DF9031B747EF400E979F2 /* TodoTypeCCell.m in Sources */,
 				30FA4CE21B6F57E2007418E6 /* LikersViewController.m in Sources */,
 				304A23321B73BC1000850085 /* TableViewController.m in Sources */,
 				3045F9781B6DDA1000627ED2 /* NSDate+Common.m in Sources */,

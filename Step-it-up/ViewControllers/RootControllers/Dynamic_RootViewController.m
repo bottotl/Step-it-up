@@ -8,6 +8,7 @@
 
 #import "Dynamic_RootViewController.h"
 #import "Tweet_RootViewController.h"
+#import "DynamicTodo_RootViewController.h"
 @interface Dynamic_RootViewController ()
 
 @end
@@ -17,7 +18,7 @@
 -(instancetype)init{
     RKSwipeBetweenViewControllers *nav_tweet = [RKSwipeBetweenViewControllers newSwipeBetweenViewControllers];
     [nav_tweet.viewControllerArray addObjectsFromArray:@[[[Tweet_RootViewController alloc]init],
-                                                         [[Tweet_RootViewController alloc]init]]];
+                                                         [[DynamicTodo_RootViewController alloc]init]]];
     nav_tweet.buttonText = @[@"好友动态", @"日程动态"];
     self = nav_tweet;
     

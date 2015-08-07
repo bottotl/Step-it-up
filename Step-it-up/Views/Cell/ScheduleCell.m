@@ -42,7 +42,6 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.contentView.bounds = CGRectMake(0, 0, 99999, 99999);
         [self loadViews];
     }
     return self;

@@ -16,6 +16,7 @@
 #import "RDVTabBarController.h"
 #import "Tweet_RootViewController.h"
 #import "RKSwipeBetweenViewControllers.h"
+#import "DynamicTodo_RootViewController.h"
 
 @interface Discover_RootViewController : BaseViewController
 

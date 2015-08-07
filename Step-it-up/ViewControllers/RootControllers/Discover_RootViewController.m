@@ -46,7 +46,7 @@
 
     _nav_tweet = [RKSwipeBetweenViewControllers newSwipeBetweenViewControllers];
     [_nav_tweet.viewControllerArray addObjectsFromArray:@[[[Tweet_RootViewController alloc]init],
-                                                         [[Tweet_RootViewController alloc]init]]];
+                                                         [[DynamicTodo_RootViewController alloc]init]]];
     _nav_tweet.buttonText = @[@"好友动态", @"日程动态"];
     
     
