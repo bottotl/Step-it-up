@@ -42,41 +42,44 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
-        //初始控件
-        self.HorizontallineView = [[UIView alloc]initWithFrame:CGRectZero];
-        self.HorizontallineView.backgroundColor = [[UIColor alloc]initWithRed:181.0/255.0 green:181.0/255.0 blue:181.0/255.0 alpha:1];
-        
-        self.VerticallineView = [[UIView alloc]initWithFrame:CGRectZero];
-        self.VerticallineView.backgroundColor = [[UIColor alloc]initWithRed:181.0/255.0 green:181.0/255.0 blue:181.0/255.0 alpha:1];
-        
-        self.circleImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
-        
-        self.locationImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
-        
-        self.contentLabel = [[UILabel alloc]initWithFrame:CGRectZero];
-        self.contentLabel.font = kSchedue_Content_Font;
-        self.contentLabel.textAlignment = NSTextAlignmentLeft;
-        [self.contentLabel setNumberOfLines:0];
-        self.contentLabel.textColor = [UIColor colorWithHexString:@"0x999999"];
-        
-        self.timeLabel = [[UILabel alloc]initWithFrame:CGRectZero];
-        self.timeLabel.font = kSchedue_Time_Font;
-        self.timeLabel.textAlignment = NSTextAlignmentCenter;
-        self.timeLabel.textColor = [[UIColor alloc]initWithRed:40.0/255.0 green:147.0/255.0 blue:86.0/255.0 alpha:1];
-        
-        
-        self.locationContentBtn = [[UIButton alloc]initWithFrame:CGRectZero];
-        self.locationContentBtn.titleLabel.font = kSchedue_LocationContent_Font;
-        self.locationContentBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        [self.locationContentBtn setTitleColor:[[UIColor alloc]initWithRed:126.0/255.0 green:123.0/255.0 blue:132.0/255.0 alpha:1] forState:UIControlStateNormal];
-
-
+        self.contentView.bounds = CGRectMake(0, 0, 99999, 99999);
+        [self loadViews];
     }
+    return self;
+}
+-(void)loadViews{
+    // Initialization code
+    //初始控件
+    self.HorizontallineView = [[UIView alloc]initWithFrame:CGRectZero];
+    self.HorizontallineView.backgroundColor = [[UIColor alloc]initWithRed:181.0/255.0 green:181.0/255.0 blue:181.0/255.0 alpha:1];
     
-    [self.contentView addSubview:self.VerticallineView];
+    self.VerticallineView = [[UIView alloc]initWithFrame:CGRectZero];
+    self.VerticallineView.backgroundColor = [[UIColor alloc]initWithRed:181.0/255.0 green:181.0/255.0 blue:181.0/255.0 alpha:1];
+    
+    self.circleImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+    
+    self.locationImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+    
+    self.contentLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+    self.contentLabel.font = kSchedue_Content_Font;
+    self.contentLabel.textAlignment = NSTextAlignmentLeft;
+    [self.contentLabel setNumberOfLines:0];
+    self.contentLabel.textColor = [UIColor colorWithHexString:@"0x999999"];
+    
+    self.timeLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+    self.timeLabel.font = kSchedue_Time_Font;
+    self.timeLabel.textAlignment = NSTextAlignmentCenter;
+    self.timeLabel.textColor = [[UIColor alloc]initWithRed:40.0/255.0 green:147.0/255.0 blue:86.0/255.0 alpha:1];
+    
+    
+    self.locationContentBtn = [[UIButton alloc]initWithFrame:CGRectZero];
+    self.locationContentBtn.titleLabel.font = kSchedue_LocationContent_Font;
+    self.locationContentBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    [self.locationContentBtn setTitleColor:[[UIColor alloc]initWithRed:126.0/255.0 green:123.0/255.0 blue:132.0/255.0 alpha:1] forState:UIControlStateNormal];
+    
+    
     [self.contentView addSubview:self.HorizontallineView];
-    
+    [self.contentView addSubview:self.VerticallineView];
     [self.contentView addSubview:self.circleImageView];
     [self.contentView addSubview:self.locationImageView];
     [self.contentView addSubview:self.contentLabel];
@@ -85,8 +88,6 @@
     
     self.circleImageView.image = [UIImage imageNamed:@"multiply_timeline_cell"];
     self.locationImageView.image = [UIImage imageNamed:@"multiply_timeline_location"];
-    
-    return self;
 }
 - (void)layoutSubviews{
     [super layoutSubviews];
@@ -117,9 +118,9 @@
     return dateFormatter;
 }
 -(void)updateConstraints{
+    
     if(!self.didSetupConstraints){
     [self.HorizontallineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
         make.centerX.equalTo(self.circleImageView.mas_centerX);
         make.top.equalTo(self.contentView.mas_top);
         make.bottom.equalTo(self.contentView.mas_bottom);
@@ -128,22 +129,22 @@
     
     [self.VerticallineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.HorizontallineView.mas_right);
-        make.right.equalTo(self.contentView.mas_right).offset(10);
-        make.bottom.equalTo(self.contentView.mas_bottom).offset(10).priorityHigh();
+        make.right.equalTo(self.contentView.mas_right).offset(-10);
+        //make.bottom.equalTo(self.contentView.mas_bottom).offset(10);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(-10);
         make.height.equalTo(@2);
     }];
     [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView.mas_left);
         make.centerY.equalTo(self.circleImageView.mas_centerY);
         make.right.equalTo(self.circleImageView.mas_left);
-        make.height.mas_equalTo(@50);
         
     }];
     [self.circleImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.contentView.mas_left).offset(80);
-        make.top.equalTo(self.contentView.mas_top).offset(20);
-        make.height.mas_equalTo(@20);
-        make.width.mas_equalTo(@20);
+        make.top.equalTo(self.contentView.mas_top).offset(10);
+        make.height.mas_equalTo(@15);
+        make.width.mas_equalTo(@15);
     }];
     [self.locationImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.circleImageView.mas_right).offset(5);
@@ -163,18 +164,12 @@
         make.top.equalTo(self.circleImageView.mas_bottom).offset(8);
         //make.height.mas_equalTo(@20).priorityHigh();
         make.right.equalTo(self.contentView.mas_right).offset(-20);
-        make.bottom.equalTo(self.VerticallineView.mas_top).priorityHigh();
+        make.bottom.equalTo(self.VerticallineView.mas_top);
     }];
-//            [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//                make.left.equalTo(self.contentView.mas_left);
-//                make.top.equalTo(self.contentView.mas_top).offset(8);
-//               // make.height.mas_equalTo(@20).priorityHigh();
-//                make.right.equalTo(self.contentView.mas_right);
-//                make.bottom.equalTo(self.contentView.mas_bottom);
-//            }];
-        self.didSetupConstraints = YES;
+    self.didSetupConstraints = YES;
     }
     [super updateConstraints];
+    
 }
 
 

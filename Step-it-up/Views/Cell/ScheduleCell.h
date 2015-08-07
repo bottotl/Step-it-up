@@ -14,5 +14,4 @@
 
 @interface ScheduleCell : BaseCell
 @property (nonatomic,strong) LKAlarmEvent *event;
-+(CGFloat)cellHeight:(LKAlarmEvent *)event;
 @end

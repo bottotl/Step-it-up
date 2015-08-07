@@ -16,12 +16,8 @@
 		301B690D1B6674030011CE91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301B690B1B6674030011CE91 /* LaunchScreen.storyboard */; };
 		301B69181B6674030011CE91 /* Step_it_upTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 301B69171B6674030011CE91 /* Step_it_upTests.m */; };
 		301B69231B6674030011CE91 /* Step_it_upUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 301B69221B6674030011CE91 /* Step_it_upUITests.m */; };
-		30211B691B68FFE500102C32 /* SIUToDoSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30211B681B68FFE500102C32 /* SIUToDoSB.storyboard */; };
-		30211B781B69003000102C32 /* CalenderStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30211B6B1B69003000102C32 /* CalenderStyleViewController.m */; };
-		30211B7B1B69003000102C32 /* ToDoAllStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30211B711B69003000102C32 /* ToDoAllStyleViewController.m */; };
-		30211B7C1B69003000102C32 /* ToDoCalenderStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30211B731B69003000102C32 /* ToDoCalenderStyleViewController.m */; };
+		30211B781B69003000102C32 /* Todo_CalenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30211B6B1B69003000102C32 /* Todo_CalenderViewController.m */; };
 		30211B7D1B69003000102C32 /* ToDoTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30211B751B69003000102C32 /* ToDoTabBarController.m */; };
-		30211B7E1B69003000102C32 /* ToDoTypeStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30211B771B69003000102C32 /* ToDoTypeStyleViewController.m */; };
 		30211B8D1B69058D00102C32 /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 30211B8C1B69058D00102C32 /* DWBubbleMenuButton.m */; };
 		3024403E1B72480C00FE71B3 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3024402A1B72480C00FE71B3 /* FMDatabase.m */; };
 		3024403F1B72480C00FE71B3 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3024402C1B72480C00FE71B3 /* FMDatabaseAdditions.m */; };
@@ -85,6 +81,7 @@
 		3045F9711B6DC7F100627ED2 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9701B6DC7F100627ED2 /* NSObject+Common.m */; };
 		3045F9751B6DD6A300627ED2 /* Tweet+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9741B6DD6A300627ED2 /* Tweet+Size.m */; };
 		3045F9781B6DDA1000627ED2 /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3045F9771B6DDA1000627ED2 /* NSDate+Common.m */; };
+		304A23321B73BC1000850085 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304A23311B73BC1000850085 /* TableViewController.m */; };
 		304EB1C61B6874740049BA37 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1C51B6874740049BA37 /* IntroductionViewController.m */; };
 		304EB1C91B687B2D0049BA37 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1C81B687B2D0049BA37 /* BaseViewController.m */; };
 		304EB1CC1B687B600049BA37 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304EB1CB1B687B600049BA37 /* RegisterViewController.m */; };
@@ -434,6 +431,8 @@
 		30C6AFBC1B67541A00A0046C /* NSURL+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C6AFBB1B67541A00A0046C /* NSURL+Common.m */; };
 		30C6AFC51B67613500A0046C /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C6AFC41B67613500A0046C /* NSObject+ObjectMap.m */; };
 		30C6AFC81B676AF100A0046C /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C6AFC71B676AF100A0046C /* UIView+Common.m */; };
+		30D8266E1B743E5700D76B07 /* Todo_AllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D8266D1B743E5700D76B07 /* Todo_AllViewController.m */; };
+		30D826711B743E6B00D76B07 /* Todo_TypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D826701B743E6B00D76B07 /* Todo_TypeViewController.m */; };
 		30FA4CC91B6EFAAB007418E6 /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA4CC81B6EFAAB007418E6 /* UIViewController+Swizzle.m */; };
 		30FA4CCD1B6EFAF1007418E6 /* ObjcRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA4CCC1B6EFAF1007418E6 /* ObjcRuntime.m */; };
 		30FA4CD11B6EFBE0007418E6 /* READEME.md in Sources */ = {isa = PBXBuildFile; fileRef = 30FA4CD01B6EFBE0007418E6 /* READEME.md */; };
@@ -502,17 +501,10 @@
 		301B691E1B6674030011CE91 /* Step-it-upUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Step-it-upUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		301B69221B6674030011CE91 /* Step_it_upUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Step_it_upUITests.m; sourceTree = "<group>"; };
 		301B69241B6674030011CE91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30211B681B68FFE500102C32 /* SIUToDoSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SIUToDoSB.storyboard; sourceTree = "<group>"; };
-		30211B6A1B69003000102C32 /* CalenderStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderStyleViewController.h; sourceTree = "<group>"; };
-		30211B6B1B69003000102C32 /* CalenderStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderStyleViewController.m; sourceTree = "<group>"; };
-		30211B701B69003000102C32 /* ToDoAllStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoAllStyleViewController.h; sourceTree = "<group>"; };
-		30211B711B69003000102C32 /* ToDoAllStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoAllStyleViewController.m; sourceTree = "<group>"; };
-		30211B721B69003000102C32 /* ToDoCalenderStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoCalenderStyleViewController.h; sourceTree = "<group>"; };
-		30211B731B69003000102C32 /* ToDoCalenderStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoCalenderStyleViewController.m; sourceTree = "<group>"; };
+		30211B6A1B69003000102C32 /* Todo_CalenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo_CalenderViewController.h; sourceTree = "<group>"; };
+		30211B6B1B69003000102C32 /* Todo_CalenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo_CalenderViewController.m; sourceTree = "<group>"; };
 		30211B741B69003000102C32 /* ToDoTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTabBarController.h; sourceTree = "<group>"; };
 		30211B751B69003000102C32 /* ToDoTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTabBarController.m; sourceTree = "<group>"; };
-		30211B761B69003000102C32 /* ToDoTypeStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTypeStyleViewController.h; sourceTree = "<group>"; };
-		30211B771B69003000102C32 /* ToDoTypeStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTypeStyleViewController.m; sourceTree = "<group>"; };
 		30211B891B69042F00102C32 /* SIUMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIUMacros.h; sourceTree = "<group>"; };
 		30211B8B1B69058D00102C32 /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBubbleMenuButton.h; sourceTree = "<group>"; };
 		30211B8C1B69058D00102C32 /* DWBubbleMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWBubbleMenuButton.m; sourceTree = "<group>"; };
@@ -643,6 +635,8 @@
 		3045F9741B6DD6A300627ED2 /* Tweet+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tweet+Size.m"; sourceTree = "<group>"; };
 		3045F9761B6DDA1000627ED2 /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
 		3045F9771B6DDA1000627ED2 /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
+		304A23301B73BC1000850085 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		304A23311B73BC1000850085 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		304EB1C41B6874740049BA37 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
 		304EB1C51B6874740049BA37 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
 		304EB1C71B687B2D0049BA37 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -1027,6 +1021,10 @@
 		30C6AFC41B67613500A0046C /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjectMap.m"; sourceTree = "<group>"; };
 		30C6AFC61B676AF100A0046C /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
 		30C6AFC71B676AF100A0046C /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		30D8266C1B743E5700D76B07 /* Todo_AllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo_AllViewController.h; sourceTree = "<group>"; };
+		30D8266D1B743E5700D76B07 /* Todo_AllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo_AllViewController.m; sourceTree = "<group>"; };
+		30D8266F1B743E6B00D76B07 /* Todo_TypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo_TypeViewController.h; sourceTree = "<group>"; };
+		30D826701B743E6B00D76B07 /* Todo_TypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo_TypeViewController.m; sourceTree = "<group>"; };
 		30FA4CC71B6EFAAB007418E6 /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
 		30FA4CC81B6EFAAB007418E6 /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
 		30FA4CCB1B6EFAF1007418E6 /* ObjcRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcRuntime.h; sourceTree = "<group>"; };
@@ -1162,6 +1160,8 @@
 				305341811B667EBC00F963A1 /* Vendor */,
 				301653721B670AA900D94163 /* Util */,
 				301B68FA1B6674030011CE91 /* Supporting Files */,
+				304A23301B73BC1000850085 /* TableViewController.h */,
+				304A23311B73BC1000850085 /* TableViewController.m */,
 			);
 			path = "Step-it-up";
 			sourceTree = "<group>";
@@ -1202,16 +1202,14 @@
 		30211B621B68F06500102C32 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
-				30211B6A1B69003000102C32 /* CalenderStyleViewController.h */,
-				30211B6B1B69003000102C32 /* CalenderStyleViewController.m */,
-				30211B701B69003000102C32 /* ToDoAllStyleViewController.h */,
-				30211B711B69003000102C32 /* ToDoAllStyleViewController.m */,
-				30211B721B69003000102C32 /* ToDoCalenderStyleViewController.h */,
-				30211B731B69003000102C32 /* ToDoCalenderStyleViewController.m */,
+				30211B6A1B69003000102C32 /* Todo_CalenderViewController.h */,
+				30211B6B1B69003000102C32 /* Todo_CalenderViewController.m */,
+				30D8266C1B743E5700D76B07 /* Todo_AllViewController.h */,
+				30D8266D1B743E5700D76B07 /* Todo_AllViewController.m */,
+				30D8266F1B743E6B00D76B07 /* Todo_TypeViewController.h */,
+				30D826701B743E6B00D76B07 /* Todo_TypeViewController.m */,
 				30211B741B69003000102C32 /* ToDoTabBarController.h */,
 				30211B751B69003000102C32 /* ToDoTabBarController.m */,
-				30211B761B69003000102C32 /* ToDoTypeStyleViewController.h */,
-				30211B771B69003000102C32 /* ToDoTypeStyleViewController.m */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -1219,7 +1217,6 @@
 		30211B671B68FFE500102C32 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				30211B681B68FFE500102C32 /* SIUToDoSB.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -2479,7 +2476,6 @@
 				30C6AF641B672DFB00A0046C /* tweet_selected@2x.png in Resources */,
 				30C6AEF61B672DFB00A0046C /* intro_icon_6@3x.png in Resources */,
 				30C6AEE91B672DFB00A0046C /* intro_icon_0@2x.png in Resources */,
-				30211B691B68FFE500102C32 /* SIUToDoSB.storyboard in Resources */,
 				30C6AE741B672DFB00A0046C /* button_file_createFolder_enable@2x.png in Resources */,
 				30C6AF081B672DFB00A0046C /* keyboard_emotion_delete@2x.png in Resources */,
 				30C6AE981B672DFB00A0046C /* coding_emoji_12@2x.png in Resources */,
@@ -2681,11 +2677,11 @@
 				303BAEC91B6A0062007AD195 /* MJPhotoToolbar.m in Sources */,
 				304EB1F81B68A83D0049BA37 /* JTCalendarMonthView.m in Sources */,
 				302BB10E1B71A13F000B0A89 /* XHPopMenu.m in Sources */,
-				30211B781B69003000102C32 /* CalenderStyleViewController.m in Sources */,
+				30D826711B743E6B00D76B07 /* Todo_TypeViewController.m in Sources */,
+				30211B781B69003000102C32 /* Todo_CalenderViewController.m in Sources */,
 				30AEE0C71B6BBE9C00CABF3D /* UIButton+User.m in Sources */,
 				302745B61B6A07C0007E8DAE /* NSString+Emojize.m in Sources */,
 				303BAECA1B6A0062007AD195 /* MJPhotoView.m in Sources */,
-				30211B7E1B69003000102C32 /* ToDoTypeStyleViewController.m in Sources */,
 				308B91D61B6B663300E255FD /* TweetCell.m in Sources */,
 				301B68FF1B6674030011CE91 /* AppDelegate.m in Sources */,
 				304EB1F21B68A83D0049BA37 /* JTCalendarAppearance.m in Sources */,
@@ -2699,13 +2695,11 @@
 				302745BF1B6A1A04007E8DAE /* Discover_RootViewController.m in Sources */,
 				30C07CF51B6E4AC900005B6E /* NSDate+Helper.m in Sources */,
 				302440571B724B3000FE71B3 /* LKDBHelper.m in Sources */,
-				30211B7B1B69003000102C32 /* ToDoAllStyleViewController.m in Sources */,
 				3045F95E1B6DB8EC00627ED2 /* TweetCommentCell.m in Sources */,
 				3045F9751B6DD6A300627ED2 /* Tweet+Size.m in Sources */,
 				304EB1F71B68A83D0049BA37 /* JTCalendarMenuView.m in Sources */,
 				303BAECC1B6A0062007AD195 /* UIImageView+MJWebCache.m in Sources */,
 				30C6AFB61B67441C00A0046C /* NSString+Common.m in Sources */,
-				30211B7C1B69003000102C32 /* ToDoCalenderStyleViewController.m in Sources */,
 				303BAEAE1B69FEDF007AD195 /* UIButton+Bootstrap.m in Sources */,
 				302440451B72480C00FE71B3 /* LKAlarmMamager.m in Sources */,
 				30FA4CDA1B6F0E78007418E6 /* RKSwipeBetweenViewControllers.m in Sources */,
@@ -2747,6 +2741,7 @@
 				302440401B72480C00FE71B3 /* FMDatabasePool.m in Sources */,
 				308B91D91B6B67B200E255FD /* Tweet.m in Sources */,
 				302DFC1D1B705C6B0068B997 /* Tweets.m in Sources */,
+				30D8266E1B743E5700D76B07 /* Todo_AllViewController.m in Sources */,
 				301B68FC1B6674030011CE91 /* main.m in Sources */,
 				303BAEC31B6A0062007AD195 /* MBProgressHUD+Add.m in Sources */,
 				304EB1D81B6899E20049BA37 /* UIBarButtonItem+Common.m in Sources */,
@@ -2772,6 +2767,7 @@
 				302DFC1A1B70560C0068B997 /* Dynamic_RootViewController.m in Sources */,
 				303BAEC61B6A0062007AD195 /* MJPhotoBrowser.m in Sources */,
 				30FA4CE21B6F57E2007418E6 /* LikersViewController.m in Sources */,
+				304A23321B73BC1000850085 /* TableViewController.m in Sources */,
 				3045F9781B6DDA1000627ED2 /* NSDate+Common.m in Sources */,
 				304EB1D21B687BC30049BA37 /* LoginViewController.m in Sources */,
 				3045F9611B6DB93B00627ED2 /* Comment.m in Sources */,

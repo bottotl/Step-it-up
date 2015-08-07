@@ -13,6 +13,7 @@
 #import "Group_RootViewController.h"
 #import "RDVTabBarItem.h"
 #import "Dynamic_RootViewController.h"
+#import "TableViewController.h"
 
 @interface RootTabViewController ()
 
@@ -35,7 +36,7 @@
     
     //Init ViewController
     Todo_RootViewController *todo = [[Todo_RootViewController alloc]init];
-     UINavigationController *nav_project = [[BaseNavigationController alloc] initWithRootViewController:todo];
+    //UINavigationController *nav_todo = [[BaseNavigationController alloc] initWithRootViewController:todo];
 
     Dynamic_RootViewController * nav_dynamic = [[Dynamic_RootViewController alloc]init];
     
@@ -45,7 +46,10 @@
     Me_RootViewController *me = [[Me_RootViewController alloc]init];
     UINavigationController *nav_me = [[BaseNavigationController alloc] initWithRootViewController:me];
     
-    [self setViewControllers:@[nav_project,nav_group,nav_dynamic,nav_me]];
+    //TableViewController *test = [[TableViewController alloc]init];
+    //UINavigationController *navi_test =[[BaseNavigationController alloc] initWithRootViewController:test];
+    
+    [self setViewControllers:@[todo,nav_group,nav_dynamic,nav_me]];
     
     //Call customize TabBar
     [self customizeTabBarForController];
